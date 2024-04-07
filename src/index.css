@@ -1,6 +1,6 @@
 :root{
   --primary: #172A49;
-  --secondary: antiquewhite;
+  --white: white;
   --font-title: "Afacad", sans-serif; 
   --font-text: "Nunito Sans", sans-serif;
 }
@@ -8,15 +8,18 @@
 #root{
 
 }
+
 body {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
 }
 
 /* CUSTOM CLASS */
 .bg-white{
-  background-color: white;
+  background-color: var(--white);
   transition: 0.5s;
 }
 .bg-transparent{
@@ -39,7 +42,7 @@ body {
   line-height: 18px;
 }
 .nav-link:hover{
-  color: white;
+  color: var(--white);
 }
 .social-container{
   display: flex;
@@ -70,8 +73,8 @@ body {
   opacity: 0;
 }
 .color-white .nav-link{
-  color: white;
-  border-right: 2px solid white;
+  color: var(--white);
+  border-right: 2px solid var(--white);
   transition: 0.5s;
 }
 .color-blue .nav-link{
