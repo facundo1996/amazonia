@@ -13,7 +13,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/1-rapidez-blanco.png',
       icon2: '/icons/characteristics/1-rapidez-azul.png',
       color: 'white',
-      background: '#172A49'
+      background: '#172A49',
+      id: 1,
     },
     {
       title: 'AISLAMIENTO TERMOACÚSTICO DE ÚLTIMA GENERACIÓN',
@@ -23,7 +24,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/2-aislamiento-azul.png',
       icon2: '/icons/characteristics/2-aislamiento-azul.png',
       color: '#172A49',
-      background: '#F2CA99'
+      background: '#F2CA99',
+      id: 2,
     },
     {
       title: 'IMPERMEABILIDAD',
@@ -34,7 +36,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/3-impermeabilidad-azul.png',
       icon2: '/icons/characteristics/3-impermeabilidad-azul.png',
       color: '#172A49',
-      background: '#94B8C4'
+      background: '#94B8C4',
+      id: 3,
     },
     {
       title: 'RESISTENCIA AL FUEGO',
@@ -44,7 +47,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/4-fuego-blanco.png',
       icon2: '/icons/characteristics/4-fuego-azul.png',
       color: 'white',
-      background: '#172A49'
+      background: '#172A49',
+      id: 4,
     },
     {
       title: 'LIBRE DE PLAGAS',
@@ -54,7 +58,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/5-plagas-azul.png',
       icon2: '/icons/characteristics/5-plagas-azul.png',
       color: '#172A49',
-      background: '#F2CA99'
+      background: '#F2CA99',
+      id: 5,
     },
     {
       title: 'OBRA LIMPIA Y CERO DESPERDICIOS',
@@ -64,7 +69,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/6-desperdicios-azul.png',
       icon2: '/icons/characteristics/6-desperdicios-azul.png',
       color: '#172A49',
-      background: '#94B8C4'
+      background: '#94B8C4',
+      id: 6,
     },
     {
       title: 'ESTRUCTURA RESISTENTE ANTE SISMOS',
@@ -74,7 +80,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/7-resistente-blanco.png',
       icon2: '/icons/characteristics/7-resistente-azul.png',
       color: 'white',
-      background: '#172A49'
+      background: '#172A49',
+      id: 7,
     },
     {
       title: 'VERSATILIDAD CONSTRUCTIVA',
@@ -86,7 +93,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/8-versatilidad-azul.png',
       icon2: '/icons/characteristics/8-versatilidad-azul.png',
       color: '#172A49',
-      background: '#F2CA99'
+      background: '#F2CA99',
+      id: 8,
     },
     {
       title: 'PROCESO SOSTENIBLE',
@@ -96,7 +104,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/9-proceso-sostenible-azul.png',
       icon2: '/icons/characteristics/9-proceso-sostenible-azul.png',
       color: '#172A49',
-      background: '#94B8C4'
+      background: '#94B8C4',
+      id: 9,
     },
     {
       title: 'ELIMINACIÓN DE REVOQUES',
@@ -106,9 +115,10 @@ export default function Characteristics() {
         'Esta característica distintiva no sólo agiliza significativamente el proceso constructivo, ahorra tiempo y recursos sino que también garantiza un acabado impecable que supera los estándares convencionales de los sistemas constructivos actuales.',
       ],
       icon1: '/icons/characteristics/10-revoques-blanco.png',
-      icon2: '/icons/characteristics/10-revoques-blanco.png',
+      icon2: '/icons/characteristics/10-revoques-azul.png',
       color: 'white',
-      background: '#172A49'
+      background: '#172A49',
+      id: 10,
     },
     {
       title: 'REDUCCIÓN DEL PESO MUERTO',
@@ -119,7 +129,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/11-reduccion-azul.png',
       icon2: '/icons/characteristics/11-reduccion-azul.png',
       color: '#172A49',
-      background: '#F2CA99'
+      background: '#F2CA99',
+      id: 11,
     },
     {
       title: 'INSTALACIONES INTEGRADAS',
@@ -129,7 +140,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/12-instalaciones-azul.png',
       icon2: '/icons/characteristics/12-instalaciones-azul.png',
       color: '#172A49',
-      background: '#94B8C4'
+      background: '#94B8C4',
+      id: 12,
     },
     {
       title: 'SOLUCIÓN INTEGRAL PARA EL CLIENTE',
@@ -137,7 +149,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/13-solucion-integral-blanco.png',
       icon2: '/icons/characteristics/13-solucion-integral-azul.png',
       color: 'white',
-      background: '#172A49'
+      background: '#172A49',
+      id: 13,
     },
     {
       title: 'SIN COSTOS ADICIONALES',
@@ -147,7 +160,8 @@ export default function Characteristics() {
       icon1: '/icons/characteristics/14-sin-costos-azul.png',
       icon2: '/icons/characteristics/14-sin-costos-azul.png',
       color: '#172A49',
-      background: '#F2CA99'
+      background: '#F2CA99',
+      id: 14,
     },
   ]
 
@@ -164,12 +178,12 @@ export default function Characteristics() {
             characteristics.map((item, index) => (
 
               <div onClick={() => setItemSelected(item)} key={index} className="box-card">
-                <div style={{ backgroundColor: item.background }} className="bg-card">
+                <div style={{ backgroundColor: itemSelected.id === item.id ?'transparent' :item.background }} className={itemSelected.id === item.id ?"bg-card border-blue" :'bg-card'}>
                 </div>
 
                 <div className="box-content">
-                  <img className='img-card' src={item.icon1} alt="" />
-                  <div style={{ color: item.color }} className='title-card'>{item.title}</div>
+                  <img className='img-card' src={itemSelected.id === item.id ?item.icon2 :item.icon1} alt="" />
+                  <div style={{ color: itemSelected.id === item.id ?'#172A49' :item.color }} className='title-card'>{item.title}</div>
                 </div>
               </div>
 

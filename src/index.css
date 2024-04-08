@@ -184,15 +184,41 @@ h4{
   font-size: 31px;
   font-weight: 700;
   gap: 10px;
+  cursor: pointer;
 }
 
-.bg-card{
+.bg-card {
   position: absolute;
   inset: 0;
   z-index: 10;
   transform: skew(-35deg);
   scale: 0.9;
+  overflow: hidden;
+  cursor: pointer;
 }
+
+.border-blue{
+  border: 3px solid var(--primary);
+  transition: 0.2s;
+}
+
+.border-blue::before,
+.border-blue::after {
+  content: ''; 
+  position: absolute;
+  z-index: -1; 
+  border-left: 3px solid var(--primary);
+  border-right: 3px solid var(--primary);
+}
+
+.border-blue::before {
+  top: -2px;
+  left: -2px;
+  width: calc(110% + 10px);
+  height: calc(153% + 12px);
+  transform: skew(35deg);
+}
+
 
 .img-card{
   width: 130px;
