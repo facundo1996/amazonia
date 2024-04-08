@@ -237,3 +237,14 @@ h4{
   color: var(--primary);
   padding-right: 125px;
 }
+.image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-image{
+  opacity: 0.15;
+  width: 100%;
+  max-width: 540px;
+}

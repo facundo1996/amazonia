@@ -178,12 +178,12 @@ export default function Characteristics() {
             characteristics.map((item, index) => (
 
               <div onClick={() => setItemSelected(item)} key={index} className="box-card">
-                <div style={{ backgroundColor: itemSelected.id === item.id ?'transparent' :item.background }} className={itemSelected.id === item.id ?"bg-card border-blue" :'bg-card'}>
+                <div style={{ backgroundColor: itemSelected.id === item.id ? 'transparent' : item.background }} className={itemSelected.id === item.id ? "bg-card border-blue" : 'bg-card'}>
                 </div>
 
                 <div className="box-content">
-                  <img className='img-card' src={itemSelected.id === item.id ?item.icon2 :item.icon1} alt="" />
-                  <div style={{ color: itemSelected.id === item.id ?'#172A49' :item.color }} className='title-card'>{item.title}</div>
+                  <img className='img-card' src={itemSelected.id === item.id ? item.icon2 : item.icon1} alt="" />
+                  <div style={{ color: itemSelected.id === item.id ? '#172A49' : item.color }} className='title-card'>{item.title}</div>
                 </div>
               </div>
 
@@ -192,17 +192,22 @@ export default function Characteristics() {
 
         </div>
 
-        <div className='w-100 ps-5'>
-          <h3 className=''>CARACTERÍSTICAS <br /> CLAVES</h3>
-          <hr />
-          <h4>{itemSelected.title}</h4>
-          {
-            itemSelected.descriptions.map((description, index) => (
-              <p className='text-description' key={index}>
-                {description}
-              </p>
-            ))
-          }
+        <div className='w-100 ps-5 d-flex flex-column justify-content-between'>
+          <div>
+            <h3 className=''>CARACTERÍSTICAS <br /> CLAVES</h3>
+            <hr />
+            <h4>{itemSelected.title}</h4>
+            {
+              itemSelected.descriptions.map((description, index) => (
+                <p className='text-description' key={index}>
+                  {description}
+                </p>
+              ))
+            }
+          </div>
+          <div className='image-container'>
+            <img className='c-image' src={itemSelected.icon2} alt="" />
+          </div>
         </div>
 
       </div>
