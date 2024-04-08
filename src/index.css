@@ -1,6 +1,8 @@
 :root{
   --primary: #172A49;
   --white: white;
+  --card-1: '#F2CA99';
+  --card-selected: transparent;
   --font-title: "Afacad", sans-serif; 
   --font-text: "Nunito Sans", sans-serif;
 }
@@ -25,6 +27,18 @@ body {
 .bg-transparent{
   background-color: transparent;
   transition: 0.5s;
+}
+h3{
+  color: var(--primary);
+  font-size: 50px;
+  line-height: 55px;
+  font-family: var(--font-title);
+}
+h4{
+  color: var(--primary);
+  font-family: var(--font-text);
+  font-size: 28px;
+  font-weight: bold;
 }
 
 /* NAVBAR */
@@ -130,4 +144,70 @@ body {
   padding-left: 72px;
   color: var(--primary);
   font-family: var(--font-text);
+}
+/* CHARACTERISTICS */
+.characteristics-container{
+  background-color: #e7e9ec;
+}
+
+.row-container{
+  padding: 80px 0px 80px 115px;
+  position: relative;
+  display: flex;
+}
+
+.box-cards-container{
+  width: 1070px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px 0px;
+}
+
+.box-card {
+  width: 517px;
+  height: 145px;
+  position: relative;
+  overflow: hidden;
+}
+.box-card:nth-child(even) {
+  margin-left: -30px; 
+}
+
+.box-content{
+  height: 100%;
+  position: absolute;
+  left: 50px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 31px;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.bg-card{
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  transform: skew(-35deg);
+  scale: 0.9;
+}
+
+.img-card{
+  width: 130px;
+}
+
+.title-card{
+  width: 265px;
+  font-size: 24px;
+  font-family: var(--font-text);
+  font-weight: bold;
+  line-height: 26px;
+}
+.text-description{
+  font-family: var(--font-text);
+  font-size: 22px;
+  color: var(--primary);
+  padding-right: 125px;
 }
