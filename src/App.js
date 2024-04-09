@@ -7,6 +7,7 @@ import More from "./components/More";
 import Models from "./components/Models";
 import AboutUs from "./components/AboutUs";
 import Mission from "./components/Mission";
+import Differences from "./components/Differences";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
       <Models />
       <AboutUs />
       <Mission />
+      <Differences />
     </div>
   );
 }
