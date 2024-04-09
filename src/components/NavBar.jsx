@@ -61,6 +61,9 @@ function NavBar() {
               <a className="nav-link b-r-2" href="/">COMERCIALIZACIÓN</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link b-r-2" href="/">MODELOS</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link b-r-2" href="/">EMPRESA</a>
             </li>
             <li className="nav-item">
