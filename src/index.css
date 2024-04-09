@@ -436,6 +436,27 @@ h4{
   line-height: 26px;
   font-weight: 500;
 }
+/* ABOUT US */
+.about-us-container{
+  background-color: #A5CCD6;
+  padding: 60px 115px;
+  display: flex;
+}
+.title-about-us{
+  border-right: solid var(--primary) 3px;
+  padding-right: 100px;
+}
+.about-us-text{
+  padding-left: 85px;
+}
+.about-us-text p{
+  font-family: var(--font-text);
+  font-size: 22px;
+  line-height: 26px;
+}
+.about-us-text b{
+  text-transform: uppercase;
+}
 @media (max-width: 1800px) {
   .box-commercialization-info{
     padding: 0 20px 0 175px;
