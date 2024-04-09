@@ -53,6 +53,19 @@ h4{
   padding-left: 115px;
   padding-right: 115px;
 }
+.title-md {
+  font-size: 24px;
+  font-family: var(--font-text);
+  font-weight: bold;
+  line-height: 26px;
+}
+.text-md {
+  color: var(--primary);
+  font-family: var(--font-text);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+}
 
 /* NAVBAR */
 .navbar{
@@ -494,7 +507,42 @@ h4{
   font-family: var(--font-text);
   font-weight: bold;
 }
+.differences-container{
+  width: 100%;
+  height: 855px;
+  background-image: url(/public/images/fondo-descubri.png), url(/public/images/descubri.png);
+  background-size:  75% 100%, 828px 100%; 
+  background-position: right center, left center;
+  background-repeat: no-repeat, no-repeat;
+}
+.box-differences{
+  position: relative;
+  height: 100%;
+  padding-left: 25%;
+}
+.p-title{
+  padding-left: 17%;
+}
+.p-box-1{
+  padding-left: 12%;
+}
+.p-box-2{
+  padding-left: 9%;
+}
+.p-box-3{
+  padding-left: 7%;
+}
+.p-box-4{
+  padding-left: 3%;
+}
 
+@media (min-width: 2350px) {
+  /* DIFFERENCES */
+  .differences-container {
+    background-size: 75% 100%, 1200px 100%;
+  }
+
+}
 @media (max-width: 1800px) {
   .box-commercialization-info{
     padding: 0 20px 0 175px;
@@ -504,6 +552,14 @@ h4{
 @media (max-width: 1600px) {
   .box-commercialization-info{
     padding: 30px 20px 30px 175px;
+  }
+
+  /* DIFFERENCES */
+  .differences-container {
+    background-size: 90% 100%, 828px 100%;
+  }
+  .box-differences {
+    padding-left: 10%;
   }
 
 }
