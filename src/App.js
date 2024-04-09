@@ -6,6 +6,7 @@ import Commercialization from "./components/Commercialization";
 import More from "./components/More";
 import Models from "./components/Models";
 import AboutUs from "./components/AboutUs";
+import Mission from "./components/Mission";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <More />
       <Models />
       <AboutUs />
+      <Mission />
     </div>
   );
 }

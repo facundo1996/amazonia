@@ -49,6 +49,10 @@ h4{
   font-size: 28px;
   font-weight: bold;
 }
+.px-115{
+  padding-left: 115px;
+  padding-right: 115px;
+}
 
 /* NAVBAR */
 .navbar{
@@ -457,6 +461,40 @@ h4{
 .about-us-text b{
   text-transform: uppercase;
 }
+
+/* MISSION */
+.text-blue{
+  font-size: 22px;
+  font-family: var(--font-text);
+  line-height: 26px;
+  color: var(--primary);
+}
+.title-mission{
+  width: 400px;
+  height: 108px;
+  background-image: url(/public/images/trazado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+.ul-list{
+  list-style: decimal;
+  color: var(--primary);
+  font-family: var(--font-text);
+  font-size: 22px;
+}
+.ul-list li{
+  margin-bottom: 10px;
+}
+.ul-list li::marker{
+  color: var(--primary);
+  font-family: var(--font-text);
+  font-weight: bold;
+}
+
 @media (max-width: 1800px) {
   .box-commercialization-info{
     padding: 0 20px 0 175px;
