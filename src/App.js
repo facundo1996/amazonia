@@ -9,6 +9,7 @@ import AboutUs from "./components/AboutUs";
 import Mission from "./components/Mission";
 import Differences from "./components/Differences";
 import ChooseUs from "./components/ChooseUs";
+import Contact from "./components/Contact";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
       <Mission />
       <Differences />
       <ChooseUs />
+      <Contact />
     </div>
   );
 }

@@ -616,7 +616,6 @@ h4 {
   width: 100%;
   min-height: 511px;
   background-color: var(--primary);
-  margin-bottom: 400px;
 }
 .choose-1{
   padding: 70px 70px 70px 115px;
@@ -638,6 +637,65 @@ h4 {
   padding: 40px;
 }
 
+/* CONTACT */
+.contact-container{
+  width: 100%;
+  padding: 115px;
+  background-image: url(/public/images/texture-4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.form-container{
+  border-right: 3px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  padding-right: 85px;
+}
+.form-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.form-contact input, textarea{
+  width: 100%;
+  border: 1px solid #707070;
+  margin-bottom: 30px;
+  padding: 22px;
+}
+.form-contact textarea{
+  min-height: 163px;
+  max-height: 220px;
+}
+.form-contact input::placeholder, textarea::placeholder{
+  text-align: center;
+  font-weight: 18px;
+  font-family: var(--font-text);
+}
+.btn-contact{
+  width: 284px;
+  height: 70px;
+  color: var(--white);
+  font-family: var(--font-text);
+  background-color: var(--primary);
+  border: none;
+}
+.contact-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: var(--font-text);
+  font-size: 22px;
+  color: var(--primary);
+}
+.contact-info a{
+  text-decoration: none;
+  color: var(--primary)!important;
+}
+.contact-info img{
+  margin-right: 20px;
+}
 
 
 @media (min-width: 2350px) {
