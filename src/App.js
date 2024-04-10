@@ -8,6 +8,7 @@ import Models from "./components/Models";
 import AboutUs from "./components/AboutUs";
 import Mission from "./components/Mission";
 import Differences from "./components/Differences";
+import ChooseUs from "./components/ChooseUs";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
       <AboutUs />
       <Mission />
       <Differences />
+      <ChooseUs />
     </div>
   );
 }
