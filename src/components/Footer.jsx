@@ -6,7 +6,11 @@ export default function Footer() {
     e.preventDefault()
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const yCoordinate = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: yCoordinate + -130,
+        behavior: 'smooth'
+      });
     }
   }
 

@@ -22,6 +22,18 @@ function NavBar() {
 
   const [scrolled, setScrolled] = useState(false);
 
+  function scrollToComponent(e, id){
+    e.preventDefault()
+    const element = document.getElementById(id);
+    if (element) {
+      const yCoordinate = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: yCoordinate + -130,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight) {
@@ -52,22 +64,22 @@ function NavBar() {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className={scrolled ?'navbar-nav color-blue' :'navbar-nav color-white'}>
             <li className="nav-item">
-              <a className="nav-link b-r-2" href="/">HOME</a>
+              <a onClick={(e) => scrollToComponent(e, 'homepage')} className="nav-link b-r-2" href="">HOME</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link b-r-2" href="/">SISTEMA CONSTRUCTIVO AMZ</a>
+              <a onClick={(e) => scrollToComponent(e, 'system')} className="nav-link b-r-2" href="">SISTEMA CONSTRUCTIVO AMZ</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link b-r-2" href="/">COMERCIALIZACIÓN</a>
+              <a onClick={(e) => scrollToComponent(e, 'commercialization')} className="nav-link b-r-2" href="">COMERCIALIZACIÓN</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link b-r-2" href="/">MODELOS</a>
+              <a onClick={(e) => scrollToComponent(e, 'models')} className="nav-link b-r-2" href="">MODELOS</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link b-r-2" href="/">EMPRESA</a>
+              <a onClick={(e) => scrollToComponent(e, 'company')} className="nav-link b-r-2" href="">EMPRESA</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">CONTACTO</a>
+              <a onClick={(e) => scrollToComponent(e, 'contact')} className="nav-link" href="">CONTACTO</a>
             </li>
           </ul>
         </div>

@@ -30,7 +30,7 @@ export default function Models() {
     },
   ]
   return (
-    <div className='pt-5'>
+    <div id='models' className='pt-5'>
       <h1 className='title-models'>MODELOS</h1>
       <div>
 

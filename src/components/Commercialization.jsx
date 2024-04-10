@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Commercialization() {
 	return (
-		<div className='commercialization-container'>
+		<div id='commercialization' className='commercialization-container'>
 			<h3 className='title-commercialization'>DISPONEMOS DE <b>OPCIONES DE CONTRATACIÓN FLEXIBLES</b> ACORDE A SU NECESIDAD Y POSIBILIDADES DE CUALQUIER TIPO DE PROYECTO</h3>
 
 			<div className='commercialization-info-container'>

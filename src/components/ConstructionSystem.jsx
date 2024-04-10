@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ConstructionSystem() {
   return (
-    <div className='d-flex row construction-system-container'>
+    <div id='system' className='d-flex row construction-system-container'>
 
       <div className='col-6 d-flex justify-content-center align-items-center title-system'>
         <h1>SISTEMA <br /> CONSTRUCTIVO AMZ</h1>
