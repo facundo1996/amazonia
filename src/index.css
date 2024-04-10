@@ -7,7 +7,9 @@
   --font-text: "Nunito Sans", sans-serif;
 }
 
-#root {}
+.row {
+  --bs-gutter-x: 0;
+}
 
 body {
   margin: 0;
@@ -65,7 +67,6 @@ h4 {
 }
 
 .text-md {
-  color: var(--primary);
   font-family: var(--font-text);
   font-size: 22px;
   line-height: 26px;
@@ -697,6 +698,28 @@ h4 {
   margin-right: 20px;
 }
 
+/* FOOTER */
+.footer-container{
+  min-height: 430px;
+  width: 100%;
+  background-image: url('/public/images/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 118px 0px 100px 0px;
+}
+.logo-footer{
+  width: 308px;
+}
+.social-footer{
+  padding-left: 50px;
+}
+.social-footer a{
+  font-size: 24px;
+  color: var(--white);
+  line-height: 32px;
+  font-family: var(--font-title);
+  text-decoration: none;
+}
 
 @media (min-width: 2350px) {
 

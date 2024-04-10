@@ -13,7 +13,7 @@ export default function ChooseUs() {
         </p>
       </div>
       <div className='choose-2'>
-        <div className='text-md'>
+        <div className='text-md c-primary'>
           Los invitamos a conocernos y a elegirnos, convencidos de que nuestro sistema constructivo representa la mejor opción para garantizar la tranquilidad y la durabilidad de sus proyectos.
         </div>
       </div>

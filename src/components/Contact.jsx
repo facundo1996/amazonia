@@ -6,7 +6,7 @@ export default function Contact() {
 
 
   return (
-    <div className='row contact-container' style={{ minHeight: '865px', marginBottom: '700px' }}>
+    <div className='row contact-container'>
       <div className='col-6 form-container'>
         <form className='form-contact' action="">
           <input placeholder='NOMBRE' type="text" />

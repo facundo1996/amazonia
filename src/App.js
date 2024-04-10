@@ -10,6 +10,7 @@ import Mission from "./components/Mission";
 import Differences from "./components/Differences";
 import ChooseUs from "./components/ChooseUs";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
       <Differences />
       <ChooseUs />
       <Contact />
+      <Footer />
     </div>
   );
 }
