@@ -11,6 +11,7 @@ import Differences from "./components/Differences";
 import ChooseUs from "./components/ChooseUs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Rights from "./components/Rights";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
       <ChooseUs />
       <Contact />
       <Footer />
+      <Rights />
     </div>
   );
 }
