@@ -90,6 +90,9 @@ h4 {
   font-size: 22px;
   z-index: 100;
 }
+.navbar-brand{
+  min-width: 134px;
+}
 
 .nav-link {
   padding: 0px 20px !important;
@@ -732,20 +735,25 @@ h4 {
   font-family: 18px;
   color: #707070;
 }
-@media (min-width: 2350px) {
 
+
+
+
+
+
+
+
+@media (min-width: 2350px) {
   /* DIFFERENCES */
   .differences-container {
     background-size: 75% 100%, 1200px 100%;
   }
-
 }
 
 @media (max-width: 1800px) {
   .box-commercialization-info {
     padding: 0 20px 0 175px;
   }
-
 }
 
 @media (max-width: 1600px) {
@@ -761,5 +769,45 @@ h4 {
   .box-differences {
     padding-left: 10%;
   }
+}
+@media (max-width: 1399.98px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 40px 0px;
+  }
+  .social-container {
+    gap: 15px;
+  }
+  .navbar-brand{
+    min-width: auto;
+  }
+  .nav-link {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 1299.98px) {
+  /* NAVBAR */
+  .social-container {
+    gap: 5px;
+  }
+  .nav-link {
+    padding: 0px 10px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  /* NAVBAR */
+  .bg-transparent{
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+
+}
+@media (max-width: 767.98px) {
+
+}
+@media (max-width: 575.98px) {
 
 }

@@ -51,9 +51,9 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className={scrolled ?'navbar navbar-expand-lg bg-white' :'navbar navbar-expand-lg bg-transparent'} >
+    <nav className={scrolled ?'navbar navbar-expand-xl bg-white' :'navbar navbar-expand-xl bg-transparent'} >
       <div className="container-fluid">
-        <a className="navbar-brand" style={{minWidth: '134px', color:'black'}} href="/">
+        <a className="navbar-brand" href="" onClick={(e) => scrollToComponent(e, 'homepage')}>
           <img className={scrolled ?'amz-logo-navbar' :'amz-logo-navbar-disabled'} src="/icons/amz-logo-blue.png" alt="" /> 
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
