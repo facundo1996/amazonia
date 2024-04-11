@@ -10,7 +10,8 @@ export default function Characteristics() {
         'La construcción en serie e industrializada que realizamos en fábrica, reduce significativamente el tiempo de desarrollo de la construcción in situ.',
         'No existen los retrasos habituales de las obras en construcción.',
       ],
-      icon1: '/icons/characteristics/1-rapidez-blanco.png',
+      btn1: '/icons/btn/1-rapidez.png',
+      btn2: '/icons/btn/1-rapidez-select.png',
       icon2: '/icons/characteristics/1-rapidez-azul.png',
       color: 'white',
       background: '#172A49',
@@ -21,7 +22,8 @@ export default function Characteristics() {
       descriptions: [
         'Garantizamos interiores confortables, gran eficiencia energética reduciendo así los costos de calefacción y refrigeración.'
       ],
-      icon1: '/icons/characteristics/2-aislamiento-azul.png',
+      btn1: '/icons/btn/2-aislamiento.png',
+      btn2: '/icons/btn/2-aislamiento-select.png',
       icon2: '/icons/characteristics/2-aislamiento-azul.png',
       color: '#172A49',
       background: '#F2CA99',
@@ -33,7 +35,8 @@ export default function Characteristics() {
         'La estructura molecular de nuestros muros está diseñada para prevenir la infiltración de agua, evitando así la transmisión de humedad por capilaridad o impregnación.',
         'Implica que no hay necesidad de aplicar revoques impermeables.'
       ],
-      icon1: '/icons/characteristics/3-impermeabilidad-azul.png',
+      btn1: '/icons/btn/3-impermeabilidad.png',
+      btn2: '/icons/btn/3-impermeabilidad-select.png',
       icon2: '/icons/characteristics/3-impermeabilidad-azul.png',
       color: '#172A49',
       background: '#94B8C4',
@@ -44,7 +47,8 @@ export default function Characteristics() {
       descriptions: [
         'Nuestros muros de hormigón celular resisten el fuego directo, pudiendo utilizarse como pared de fuego. Son auto-extinguibles, químicamente inertes y no tóxicos, siendo esta una de las tantas características que dotan de superioridad a nuestro sistema constructivo. '
       ],
-      icon1: '/icons/characteristics/4-fuego-blanco.png',
+      btn1: '/icons/btn/4-fuego.png',
+      btn2: '/icons/btn/4-fuego-select.png',
       icon2: '/icons/characteristics/4-fuego-azul.png',
       color: 'white',
       background: '#172A49',
@@ -55,7 +59,8 @@ export default function Characteristics() {
       descriptions: [
         'El hormigón celular con el que están fabricados nuestros muros, es un material inorgánico por lo que no favorece la formación de plagas y además, tiene alta resistencia a hongos, insectos y termitas.',
       ],
-      icon1: '/icons/characteristics/5-plagas-azul.png',
+      btn1: '/icons/btn/5-plagas.png',
+      btn2: '/icons/btn/5-plagas-select.png',
       icon2: '/icons/characteristics/5-plagas-azul.png',
       color: '#172A49',
       background: '#F2CA99',
@@ -66,7 +71,8 @@ export default function Characteristics() {
       descriptions: [
         'Al ser un proceso industrializado, fundamentado en un desarrollo de ingeniería de detalle, no hay desechos ni desperdicios de obra. Entorno limpio y eficiente.'
       ],
-      icon1: '/icons/characteristics/6-desperdicios-azul.png',
+      btn1: '/icons/btn/6-desperdicios.png',
+      btn2: '/icons/btn/6-desperdicios-select.png',
       icon2: '/icons/characteristics/6-desperdicios-azul.png',
       color: '#172A49',
       background: '#94B8C4',
@@ -77,7 +83,8 @@ export default function Characteristics() {
       descriptions: [
         'Sistema apto para instalarse en zonas clasificadas con riesgo sísmico.'
       ],
-      icon1: '/icons/characteristics/7-resistente-blanco.png',
+      btn1: '/icons/btn/7-resistente.png',
+      btn2: '/icons/btn/7-resistente-select.png',
       icon2: '/icons/characteristics/7-resistente-azul.png',
       color: 'white',
       background: '#172A49',
@@ -90,7 +97,8 @@ export default function Characteristics() {
         'Soluciones flexibles y personalizadas en diferentes escalas y contextos.',
         'Amplia variedad de acabados y revestimientos para satisfacer preferencias individuales.',
       ],
-      icon1: '/icons/characteristics/8-versatilidad-azul.png',
+      btn1: '/icons/btn/8-versatilidad.png',
+      btn2: '/icons/btn/8-versatilidad-select.png',
       icon2: '/icons/characteristics/8-versatilidad-azul.png',
       color: '#172A49',
       background: '#F2CA99',
@@ -101,7 +109,8 @@ export default function Characteristics() {
       descriptions: [
         'En nuestro proceso, adoptamos una mentalidad sostenible en todo el ciclo productivo, donde los desperdicios se reutilizan y tenemos un fuerte compromiso con la conciencia ambiental.'
       ],
-      icon1: '/icons/characteristics/9-proceso-sostenible-azul.png',
+      btn1: '/icons/btn/9-proceso-sostenible.png',
+      btn2: '/icons/btn/9-proceso-sostenible-select.png',
       icon2: '/icons/characteristics/9-proceso-sostenible-azul.png',
       color: '#172A49',
       background: '#94B8C4',
@@ -114,7 +123,8 @@ export default function Characteristics() {
         'No hay necesidad de revoques gruesos o finos, lo que permite aplicar directamente el revestimiento elegido por el cliente o simplemente una fina capa de pintura aportando color al acabado del muro',
         'Esta característica distintiva no sólo agiliza significativamente el proceso constructivo, ahorra tiempo y recursos sino que también garantiza un acabado impecable que supera los estándares convencionales de los sistemas constructivos actuales.',
       ],
-      icon1: '/icons/characteristics/10-revoques-blanco.png',
+      btn1: '/icons/btn/10-revoques.png',
+      btn2: '/icons/btn/10-revoques-select.png',
       icon2: '/icons/characteristics/10-revoques-azul.png',
       color: 'white',
       background: '#172A49',
@@ -126,7 +136,8 @@ export default function Characteristics() {
         'Debido a la ligereza de nuestros muros de hormigón celular, la carga muerta considerada en el cálculo estructural es significativamente menor, lo que resulta en fundaciones y estructuras de menor porte y volumen. Esto no solo reduce costos, sino que también acelera el proceso de construcción.',
         'Una de las características destacadas del hormigón celular es su ligereza, es un 65% más liviano que los materiales tradicionales.',
       ],
-      icon1: '/icons/characteristics/11-reduccion-azul.png',
+      btn1: '/icons/btn/11-reduccion.png',
+      btn2: '/icons/btn/11-reduccion-select.png',
       icon2: '/icons/characteristics/11-reduccion-azul.png',
       color: '#172A49',
       background: '#F2CA99',
@@ -137,7 +148,8 @@ export default function Characteristics() {
       descriptions: [
         'Las instalaciones, como agua, gas natural, electricidad y desagües, son canalizadas en el muro dentro de nuestra planta de producción, eliminando la necesidad de hacerlas en obra.',
       ],
-      icon1: '/icons/characteristics/12-instalaciones-azul.png',
+      btn1: '/icons/btn/12-instalaciones.png',
+      btn2: '/icons/btn/12-instalaciones-select.png',
       icon2: '/icons/characteristics/12-instalaciones-azul.png',
       color: '#172A49',
       background: '#94B8C4',
@@ -146,7 +158,8 @@ export default function Characteristics() {
     {
       title: 'SOLUCIÓN INTEGRAL PARA EL CLIENTE',
       descriptions: ['En nuestra empresa, garantizamos a nuestros clientes un proyecto completado rápidamente, con la mejor calidad y eficiencia, sin costos adicionales ni malestares. Además de llevar a cabo su proyecto, ofrecemos la opción de elegir entre modelos estandarizados para ahorrar tiempo y dinero, o trabajar en colaboración con su propio arquitecto/a para satisfacer sus necesidades específicas.'],
-      icon1: '/icons/characteristics/13-solucion-integral-blanco.png',
+      btn1: '/icons/btn/13-solucion-integral.png',
+      btn2: '/icons/btn/13-solucion-integral-select.png',
       icon2: '/icons/characteristics/13-solucion-integral-azul.png',
       color: 'white',
       background: '#172A49',
@@ -157,7 +170,8 @@ export default function Characteristics() {
       descriptions: [
         'Transparencia total y tranquilidad financiera. Te garantizamos que no habrá costos ocultos ni adicionales. Nos comprometemos a brindarte una experiencia de construcción sin complicaciones.'
       ],
-      icon1: '/icons/characteristics/14-sin-costos-azul.png',
+      btn1: '/icons/btn/14-sin-costos.png',
+      btn2: '/icons/btn/14-sin-costos-select.png',
       icon2: '/icons/characteristics/14-sin-costos-azul.png',
       color: '#172A49',
       background: '#F2CA99',
@@ -177,14 +191,8 @@ export default function Characteristics() {
           {
             characteristics.map((item, index) => (
 
-              <div onClick={() => setItemSelected(item)} key={index} className="box-card">
-                <div style={{ backgroundColor: itemSelected.id === item.id ? 'transparent' : item.background }} className={itemSelected.id === item.id ? "bg-card border-blue" : 'bg-card'}>
-                </div>
-
-                <div className="box-content">
-                  <img className='img-card' src={itemSelected.id === item.id ? item.icon2 : item.icon1} alt="" />
-                  <div style={{ color: itemSelected.id === item.id ? '#172A49' : item.color }} className='title-card'>{item.title}</div>
-                </div>
+              <div key={index} className="box-card">
+                <img onClick={() => setItemSelected(item)} src={itemSelected.id === item.id ?item.btn2 :item.btn1} alt="" />
               </div>
 
             ))
