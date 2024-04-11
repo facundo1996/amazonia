@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function Characteristics() {
 
@@ -180,7 +180,18 @@ export default function Characteristics() {
   ]
 
   const [itemSelected, setItemSelected] = useState(characteristics[0])
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1400);
+    };
 
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   return (
@@ -194,7 +205,7 @@ export default function Characteristics() {
               CARACTERÍSTICAS CLAVES
             </button>
           </h2>
-          <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCharacteristics">
+          <div id="collapseOne" className={isMobile ?"accordion-collapse collapse" :"accordion-collapse collapse show"} aria-labelledby="headingOne" data-bs-parent="#accordionCharacteristics">
 
             <div className='row-container'>
               <div className='box-cards-container'>
