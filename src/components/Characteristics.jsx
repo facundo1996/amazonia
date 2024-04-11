@@ -198,7 +198,7 @@ export default function Characteristics() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isMobile]);
 
 
   return (
