@@ -9,7 +9,7 @@ export default function Commercialization() {
 				<div className='box-1'>
 					<div className='title-construction-system'>CONSTRUIMOS EN TU TERRENO CON NUESTRO SISTEMA CONSTRUCTIVO</div>
 					<div>
-						<div className='d-flex mb-4'>
+						<div className='d-flex mb-2 mb-md-4'>
 							<div className='number'>1</div>
 							<div className='box-availability'>
 								<div className='availability-info'>Obra estructural en</div>

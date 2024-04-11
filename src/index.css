@@ -836,6 +836,30 @@ h4 {
     display: flex;
     gap: 15px;
   }
+  /* Commercialization */
+  .commercialization-info-container{
+    flex-direction: column;
+    height: auto;
+  }
+  .box-1{
+    width: 743px;
+    height: 455px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 0px;
+    background-image: url(/public/images/trazado-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .box-commercialization-info{
+    padding: 30px;
+  }
+  .box-2{
+    background-color: rgba(242, 202, 153, 0.17);
+    background-image: none;
+  }
 }
 @media (max-width: 991.98px) {
   /* CHARACTERISTICS */
@@ -848,6 +872,12 @@ h4 {
   .box-card{
     max-width: 400px;
     width: 100%;
+  }
+  /* Commercialization */
+  .title-commercialization {
+    text-align: center;
+    margin: 65px auto;
+    padding: 0px 20px;
   }
 }
 @media (max-width: 767.98px) {
@@ -872,9 +902,32 @@ h4 {
     width: 445px;
     line-height: 70px; 
   }
+  /* Commercialization */
+  .box-1 {
+    width: 375px;
+    height: 312px;
+  }
+  .box-availability {
+    width: 275px;
+    height: 85px;
+  }
+  .title-construction-system {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .number {
+    font-size: 100px;
+    line-height: 85px;
+  }
+  .title-commercialization{
+    font-size: 30px;
+    line-height: 32px;
+    margin: 30px auto;
+  }
 }
 @media (max-width: 575.98px) {
-   /* BANNER */
+  /* BANNER */
   .banner-container {
     height: 500px;
   }
@@ -888,4 +941,47 @@ h4 {
     width: 230px;
     line-height: 40px;
   }
+  /* Commercialization */
+  .commercialization-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .title-commercialization {
+    font-size: 22px;
+    line-height: 22px;
+    margin: 25px auto;
+  }
+  .box-1 {
+    min-width: auto;
+    max-width: auto;
+    width: 95%;
+    background-size: cover;
+    background-position: right;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .title-construction-system{
+    width: 88%;
+  }
+  .number{
+    margin-right: 10px;
+  }
+  .box-availability {
+    width: 230px;
+    height: 80px;
+  }
+  .availability-info {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .availability-time{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .box-commercialization-info {
+    padding: 20px;
+  }
+
+
+
 }
