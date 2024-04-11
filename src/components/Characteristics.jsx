@@ -183,8 +183,15 @@ export default function Characteristics() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1400);
+      setIsMobile(window.innerWidth < 1400);
     };
+    if(window.innerWidth < 1400){
+      console.log("esmobile")
+      console.log(isMobile)
+    }else{
+      console.log("NO")
+    }
+    handleResize()
 
     window.addEventListener('resize', handleResize);
 
