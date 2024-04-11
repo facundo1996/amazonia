@@ -274,6 +274,13 @@ h4 {
   max-width: 540px;
 }
 
+.characteristics-container .accordion-item{  
+  background-color: rgba(23, 42, 73, 0.1);
+}
+.characteristics-container .accordion-header{
+  display: none;
+}  
+
 /* BANNER 1 */
 .banner-container {
   width: 100%;
@@ -745,7 +752,7 @@ h4 {
   .differences-container {
     background-size: 90% 100%, 828px 100%;
   }
-
+  
   .box-differences {
     padding-left: 10%;
   }
@@ -779,6 +786,36 @@ h4 {
     padding-top: 20px;
     padding-left: 0px;
   }
+  /* CHARACTERISTICS */
+  .characteristics-container .accordion-header{
+    display: flex;
+    height: 100px;
+  }  
+  .characteristics-container .accordion-button{
+    background-color: rgba(23, 42, 73, 0.1);
+    color: var(--primary);
+    font-family: var(--font-titles); 
+    font-weight: 600;   
+  }
+  .characteristics-container .accordion-item{
+    border-radius: 0px;
+    border: none;
+  }
+  .row-container{
+    flex-direction: column;
+  }
+  .box-cards-container{
+    width: 100%;
+  }
+  .box-card{
+    margin: auto;
+  }
+  .row-container{
+    padding: 50px 20px;
+  }
+  .text-description{
+    padding-right: 0px;
+  }
 }
 @media (max-width: 1299.98px) {
   /* NAVBAR */
@@ -801,7 +838,17 @@ h4 {
   }
 }
 @media (max-width: 991.98px) {
-
+  /* CHARACTERISTICS */
+  .box-cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 10px 0px;
+    height: auto;
+  }
+  .box-card{
+    max-width: 400px;
+    width: 100%;
+  }
 }
 @media (max-width: 767.98px) {
   .construction-system-container{

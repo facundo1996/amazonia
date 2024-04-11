@@ -185,40 +185,54 @@ export default function Characteristics() {
 
   return (
     <div className='characteristics-container'>
-      <div className='row-container'>
 
-        <div className='box-cards-container'>
-          {
-            characteristics.map((item, index) => (
 
-              <div key={index} className="box-card">
-                <img onClick={() => setItemSelected(item)} src={itemSelected.id === item.id ?item.btn2 :item.btn1} alt="" />
+      <div class="accordion" id="accordionCharacteristics">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              CARACTERÍSTICAS CLAVES
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCharacteristics">
+
+            <div className='row-container'>
+              <div className='box-cards-container'>
+                {
+                  characteristics.map((item, index) => (
+
+                    <div key={index} className="box-card">
+                      <img onClick={() => setItemSelected(item)} src={itemSelected.id === item.id ? item.btn2 : item.btn1} alt="" />
+                    </div>
+
+                  ))
+                }
               </div>
 
-            ))
-          }
+              <div className='w-100 ps-0 ps-xxl-5 d-flex flex-column justify-content-between mt-5 mt-xxl-0'>
+                <div>
+                  <h3 className='d-none d-xxl-flex'>CARACTERÍSTICAS <br /> CLAVES</h3>
+                  <hr className='d-none d-xxl-flex' />
+                  <h4>{itemSelected.title}</h4>
+                  {
+                    itemSelected.descriptions.map((description, index) => (
+                      <p className='text-description' key={index}>
+                        {description}
+                      </p>
+                    ))
+                  }
+                </div>
+                <div className='image-container'>
+                  <img className='c-image' src={itemSelected.icon2} alt="" />
+                </div>
+              </div>
+            </div>
 
-        </div>
-
-        <div className='w-100 ps-5 d-flex flex-column justify-content-between'>
-          <div>
-            <h3 className=''>CARACTERÍSTICAS <br /> CLAVES</h3>
-            <hr />
-            <h4>{itemSelected.title}</h4>
-            {
-              itemSelected.descriptions.map((description, index) => (
-                <p className='text-description' key={index}>
-                  {description}
-                </p>
-              ))
-            }
           </div>
-          <div className='image-container'>
-            <img className='c-image' src={itemSelected.icon2} alt="" />
-          </div>
         </div>
-
       </div>
+
+
     </div>
   )
 }
