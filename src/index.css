@@ -107,6 +107,8 @@ h4 {
 .social-container {
   display: flex;
   gap: 25px;
+}
+.social-container a{
   height: 28px;
 }
 
@@ -176,6 +178,18 @@ h4 {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+.social-homepage{
+  position: absolute;
+  top: 55%;
+}
+.social-homepage a{
+  text-align: center;
+  font-family: var(--font-title);
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* Construction System */
@@ -790,7 +804,7 @@ h4 {
 @media (max-width: 1299.98px) {
   /* NAVBAR */
   .social-container {
-    gap: 5px;
+    gap: 10px;
   }
   .nav-link {
     padding: 0px 10px !important;
@@ -800,6 +814,11 @@ h4 {
   /* NAVBAR */
   .bg-transparent{
     display: none;
+  }
+  /* HOMEPAGE */
+  .social-container {
+    display: flex;
+    gap: 15px;
   }
 }
 @media (max-width: 991.98px) {

@@ -83,7 +83,7 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        <div className='social-container'>
+        <div className='social-container d-none d-xl-flex'>
         {
             redes.map((social,index) => (
               <a key={index} className='d-flex justify-content-center align-items-center' target='_blanc' href={social.url}>
