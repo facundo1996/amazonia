@@ -39,12 +39,12 @@ export default function HomePage() {
         <video className='d-flex d-xl-none' autoPlay loop playsInline muted src="/videos/video-mobile.mp4"></video>
 
         <div className='d-flex d-xl-none flex-column justify-content-center align-items-center social-homepage'>
-          <a href='' onClick={(e) => scrollToComponent(e, 'homepage')}>HOME </a>
-          <a href='' onClick={(e) => scrollToComponent(e, 'system')}>SISTEMA CONSTRUCTIVO AMZ </a>
-          <a href='' onClick={(e) => scrollToComponent(e, 'commercialization')}>COMERCIALIZACIÓN </a>
-          <a href='' onClick={(e) => scrollToComponent(e, 'models')}>MODELOS </a>
-          <a href='' onClick={(e) => scrollToComponent(e, 'company')}>EMPRESA </a>
-          <a href='' onClick={(e) => scrollToComponent(e, 'contact')}>CONTACTO</a>
+          <a href='/' onClick={(e) => scrollToComponent(e, 'homepage')}>HOME </a>
+          <a href='/' onClick={(e) => scrollToComponent(e, 'system')}>SISTEMA CONSTRUCTIVO AMZ </a>
+          <a href='/' onClick={(e) => scrollToComponent(e, 'commercialization')}>COMERCIALIZACIÓN </a>
+          <a href='/' onClick={(e) => scrollToComponent(e, 'models')}>MODELOS </a>
+          <a href='/' onClick={(e) => scrollToComponent(e, 'company')}>EMPRESA </a>
+          <a href='/' onClick={(e) => scrollToComponent(e, 'contact')}>CONTACTO</a>
           <div className='social-container mt-5'>
             {
               redes.map((social, index) => (

@@ -45,7 +45,7 @@ export default function Contact() {
 
         </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.461830346874!2d-60.7195294!3d-32.8065262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b650f7aee0b7f9%3A0x701fb4db64baa2df!2sAv.%20San%20Lorenzo%202669%2C%20Cap.%20Berm%C3%BAdez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1712723921908!5m2!1ses!2sar" width="100%" height={"300px"} style={{ border: 0 }}></iframe>
+        <iframe title='AMZ Desarrollos Ubicación' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.461830346874!2d-60.7195294!3d-32.8065262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b650f7aee0b7f9%3A0x701fb4db64baa2df!2sAv.%20San%20Lorenzo%202669%2C%20Cap.%20Berm%C3%BAdez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1712723921908!5m2!1ses!2sar" width="100%" height={"300px"} style={{ border: 0 }}></iframe>
 
       </div>
     </div>
