@@ -906,6 +906,19 @@ h4 {
   .model-container .accordion-body {
     border-bottom: 2px solid var(--primary);
   }
+  /* ABOUT US */
+  .about-us-container{
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+  .title-about-us{
+    border-right: none;
+    border-bottom: 2px solid var(--primary);
+    padding-right: 0px;
+  }
+  .about-us-text{
+    padding: 20px 0px;
+  }
 }
 @media (max-width: 991.98px) {
   /* CHARACTERISTICS */
