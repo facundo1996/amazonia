@@ -857,6 +857,10 @@ h4 {
   .differences-container{
     height: auto;
   }
+  /* CONTACT */
+  .contact-container{
+    padding: 50px 20px;
+  }
 }
 @media (max-width: 1199.98px) {
   /* NAVBAR */
@@ -1018,7 +1022,21 @@ h4 {
     width: 90%;
     max-width: 604px;
   }
+  /* CONTACT */
+  .contact-container{
+    flex-direction: column-reverse;
+    
+    background-image: url(/public/images/texture-4-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto 50%;
 
+  }
+  .form-container{
+    padding-right: 0px;
+    border-right: none;
+    padding-top: 30px;
+  }
 }
 @media (max-width: 767.98px) {
   .construction-system-container{
@@ -1159,5 +1177,9 @@ h4 {
   .choose-1 h3{
     font-size: 32px;
     line-height: 33px;
+  }
+  /* CONTACT */
+  .contact-info {
+    font-size: 15px;
   }
 }

@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <div id='contact' className='row contact-container'>
-      <div className='col-6 form-container'>
+      <div className='col-12 col-lg-6 form-container'>
         <form className='form-contact' action="">
           <input placeholder='NOMBRE' type="text" />
           <input placeholder='E-MAIL' type="email" />
@@ -16,7 +16,7 @@ export default function Contact() {
           <button onClick={(e) => e.preventDefault()} className='btn-contact'>ENVIAR</button>
         </form>
       </div>
-      <div className='col-6 ps-5'>
+      <div className='col-12 col-lg-6 ps-0 ps-lg-5'>
         <h1>CONTACTO</h1>
 
         <div className='contact-info'>
