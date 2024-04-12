@@ -21,6 +21,14 @@ body {
   width: 100vw;
   max-width: 100%;
 }
+.wsp-icon{
+  position: fixed;
+  width: 84px;
+  right: 60px;
+  bottom: 60px;
+  z-index: 50;
+  cursor: pointer;
+}
 
 /* CUSTOM CLASS */
 .b-r-2 {
@@ -967,6 +975,12 @@ h4 {
     border-bottom: 2px solid var(--white);
     padding-bottom: 10px;
     text-align: center;
+  }
+  /* WSP */
+  .wsp-icon{
+    width: 60px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 @media (max-width: 991.98px) {
