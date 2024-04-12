@@ -828,6 +828,10 @@ h4 {
   .text-description{
     padding-right: 0px;
   }
+  /* Differences */
+  .box-differences{
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 1299.98px) {
   /* NAVBAR */
@@ -836,6 +840,10 @@ h4 {
   }
   .nav-link {
     padding: 0px 10px !important;
+  }
+  /* Differences */
+  .differences-container{
+    height: auto;
   }
 }
 @media (max-width: 1199.98px) {
@@ -942,6 +950,43 @@ h4 {
     margin: 65px auto;
     padding: 0px 20px;
   }
+  /* Differences */
+  .differences-container {
+    width: 100%;
+    background-image: url(/public/images/descubri-mobile.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+}
+.box-differences{
+  padding: 20px 20px 20px 20px!important;
+  background-image: url(/public/images/fondo-descubri-mobile.png);
+  background-repeat: no-repeat
+}
+.p-title{
+  padding-left: 0;
+  width: 450px;
+  font-size: 65px;
+  line-height: 65px;
+  margin-bottom: 30px!important;
+}
+.p-box-1 {
+  padding-left: 0;
+}
+
+.p-box-2 {
+  padding-left: 0;
+}
+
+.p-box-3 {
+  padding-left: 0;
+}
+
+.p-box-4 {
+  padding-left: 0;
+}
+
 }
 @media (max-width: 767.98px) {
   .construction-system-container{
@@ -1058,5 +1103,11 @@ h4 {
   /* MISSION */
   .title-mission{
     width: 100%;
+  }
+  /* Differences */
+  .p-title{
+    width: auto;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
