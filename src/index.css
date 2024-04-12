@@ -947,6 +947,23 @@ h4 {
   .px-115{
     padding: 20px;
   }
+  /* FOOTER */
+  .social-footer{
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  .footer-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer-container div{
+    border-right: none;
+  }
+  .footer-container .text-md{
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }
 @media (max-width: 991.98px) {
   /* CHARACTERISTICS */
