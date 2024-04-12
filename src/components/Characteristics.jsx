@@ -185,12 +185,6 @@ export default function Characteristics() {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1400);
     };
-    if(window.innerWidth < 1400){
-      console.log("esmobile")
-      console.log(isMobile)
-    }else{
-      console.log("NO")
-    }
     handleResize()
 
     window.addEventListener('resize', handleResize);

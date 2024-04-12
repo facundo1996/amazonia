@@ -38,13 +38,27 @@ export default function Models() {
           models.map((model, index) => (
             <div className='model-container' key={index}>
               <video autoPlay loop playsInline muted src={model.image}></video>
-              <div>
-                <div className='title-model'>{model.title}</div>
-                {
-                  model.descriptions.map((description,index) => (
-                    <p className='model-description' key={index}>{description}</p>
-                  ))
-                }
+
+              <div className="accordion accordion-flush" id="accordion-models">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingOne">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#model${index}`} aria-expanded="false" aria-controls={`model${index}`}>
+                      {model.title}
+                    </button>
+                  </h2>
+                  <div id={`model${index}`} className="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordion-models">
+                    <div className="accordion-body">
+                      <div>
+                        <div className='title-model'>{model.title}</div>
+                        {
+                          model.descriptions.map((description, index) => (
+                            <p className='model-description' key={index}>{description}</p>
+                          ))
+                        }
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

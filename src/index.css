@@ -11,6 +11,9 @@
   --bs-gutter-x: 0;
 }
 
+.accordion-button:focus {
+  box-shadow: none;
+}
 body {
   margin: 0;
   padding: 0px;
@@ -486,7 +489,12 @@ h4 {
   line-height: 26px;
   font-weight: 500;
 }
-
+.model-container .accordion-header{
+  display: none;
+}
+.model-container .accordion-body{
+  padding: 0;
+}
 /* ABOUT US */
 .about-us-container {
   background-color: #A5CCD6;
@@ -756,6 +764,10 @@ h4 {
   .box-differences {
     padding-left: 10%;
   }
+  /* MODELS */
+  .model-container video {
+    width: 500px;
+  }
 }
 @media (max-width: 1399.98px) {
   /* NAVBAR */
@@ -859,6 +871,40 @@ h4 {
   .box-2{
     background-color: rgba(242, 202, 153, 0.17);
     background-image: none;
+  }
+  /* MODELS */
+  .model-container{
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .model-container video {
+    margin: auto;
+  }
+  .title-models{
+    padding-left: 20px;
+  }
+  .title-model{
+    display: none;
+  }
+  .model-container .accordion-header{
+    display: flex;
+  }
+  .accordion-button:not(.collapsed){
+    background-color: transparent;
+    border: none;
+  }
+  .model-container .accordion-button {
+    font-size: 24px;
+    font-family: var(--font-text);
+    font-weight: bold;
+    color: var(--primary);
+    box-shadow: none;
+  }
+  .model-container .accordion-button::after {
+    margin-left: 50px;
+  }
+  .model-container .accordion-body {
+    border-bottom: 2px solid var(--primary);
   }
 }
 @media (max-width: 991.98px) {
@@ -987,6 +1033,10 @@ h4 {
     font-size: 24px;
     border: none;
   }
-
+  /* MODELS */
+  .model-container video{
+    width: 100%;
+    margin: none;
+  }
 
 }
