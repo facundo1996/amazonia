@@ -22,7 +22,7 @@ function NavBar() {
 
   const [scrolled, setScrolled] = useState(false);
 
-  function scrollToComponent(e, id){
+  function scrollToComponent(e, id) {
     e.preventDefault()
     const element = document.getElementById(id);
     if (element) {
@@ -44,25 +44,25 @@ function NavBar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <nav className={scrolled ?'navbar navbar-expand-xl bg-white' :'navbar navbar-expand-xl bg-transparent'} >
+    <nav className={scrolled ? 'navbar navbar-expand-xl bg-white' : 'navbar navbar-expand-xl bg-transparent'} >
       <div className="container-fluid">
         <a className="navbar-brand" href='/' onClick={(e) => scrollToComponent(e, 'homepage')}>
-          <img className={scrolled ?'amz-logo-navbar' :'amz-logo-navbar-disabled'} src="/icons/amz-logo-blue.png" alt="" /> 
+          <img className={scrolled ? 'amz-logo-navbar' : 'amz-logo-navbar-disabled'} src="/icons/amz-logo-blue.png" alt="" />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon">
-            
+
           </span>
         </button>
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul className={scrolled ?'navbar-nav color-blue' :'navbar-nav color-white'}>
+          <ul className={scrolled ? 'navbar-nav color-blue' : 'navbar-nav color-white'}>
             <li className="nav-item">
               <a onClick={(e) => scrollToComponent(e, 'homepage')} className="nav-link b-r-2" href='/'>HOME</a>
             </li>
@@ -82,15 +82,28 @@ function NavBar() {
               <a onClick={(e) => scrollToComponent(e, 'contact')} className="nav-link" href='/'>CONTACTO</a>
             </li>
           </ul>
+          <div className='social-container mt-3 d-flex d-xl-none'>
+            {
+              redes.map((social, index) => (
+                <a key={index} className='d-flex justify-content-center align-items-center' target='_blanc' href={social.url}>
+                  {
+                    scrolled
+                      ? <img className={'icon-social-blue'} src={social.iconblue} alt="" />
+                      : <img className={'icon-social-white'} src={social.icon} alt="" />
+                  }
+                </a>
+              ))
+            }
+          </div>
         </div>
         <div className='social-container d-none d-xl-flex'>
-        {
-            redes.map((social,index) => (
+          {
+            redes.map((social, index) => (
               <a key={index} className='d-flex justify-content-center align-items-center' target='_blanc' href={social.url}>
                 {
                   scrolled
-                  ?<img className={'icon-social-blue'} src={social.iconblue} alt="" />
-                  :<img className={'icon-social-white'} src={social.icon} alt="" />
+                    ? <img className={'icon-social-blue'} src={social.iconblue} alt="" />
+                    : <img className={'icon-social-white'} src={social.icon} alt="" />
                 }
               </a>
             ))

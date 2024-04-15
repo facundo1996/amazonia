@@ -871,6 +871,37 @@ h4 {
   .bg-transparent{
     display: none;
   }
+  .navbar{
+    width: 80px;
+    padding: 0px;
+    background-color: white!important;
+  }
+  .navbar .container-fluid{
+    padding: 12px;
+  }
+  .navbar-brand {
+    margin: 0px;
+    rotate: 90deg;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .amz-logo-navbar{
+    width: 56px;
+  }
+  #navbarNav{
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    padding: 20px;
+  }
+  #navbarNav .nav-link {
+    border: none;
+    margin-bottom: 5px;
+  }
   /* HOMEPAGE */
   .social-container {
     display: flex;
