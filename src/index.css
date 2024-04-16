@@ -1027,7 +1027,6 @@ h4 {
   .title-commercialization {
     text-align: center;
     margin: 65px 80px;
-    padding: 0px 20px;
   }
   /* Differences */
   .differences-container {
@@ -1253,5 +1252,9 @@ h4 {
   /* CONTACT */
   .contact-info {
     font-size: 15px;
+  }
+  /* Characteristics */
+  .box-card {
+    height: 70px;
   }
 }
