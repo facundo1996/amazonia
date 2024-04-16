@@ -19,8 +19,14 @@ function NavBar() {
       url: 'https://www.google.com/'
     },
   ]
+  const wspIcon = {
+    iconBlue: 'icons/wsp-azul.png',
+    iconWhite: 'icons/wsp-blanco.png',
+    tel: '',
+  }
 
   const [scrolled, setScrolled] = useState(false);
+  const [scrolledTop, setScrolledTop] = useState(false);
 
   function scrollToComponent(e, id) {
     e.preventDefault()
@@ -41,6 +47,11 @@ function NavBar() {
       } else {
         setScrolled(false);
       }
+      if(window.scrollY > 100) {
+        setScrolledTop(true)
+      }else {
+        setScrolledTop(false)
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -51,6 +62,7 @@ function NavBar() {
   }, []);
 
   return (
+    <>
     <nav className={scrolled ? 'navbar navbar-expand-xl bg-white' : 'navbar navbar-expand-xl bg-transparent'} >
       <div className="container-fluid">
         <a className="navbar-brand" href='/' onClick={(e) => scrollToComponent(e, 'homepage')}>
@@ -111,6 +123,8 @@ function NavBar() {
         </div>
       </div>
     </nav>
+      <img onClick={() => window.open('https://wa.me/3415217974', '_blank')} src={scrolledTop ?wspIcon.iconBlue :wspIcon.iconWhite} className='wsp-icon' alt="" />
+    </>
   )
 }
 
