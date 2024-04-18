@@ -23,9 +23,9 @@ body {
 }
 .wsp-icon{
   position: fixed;
-  width: 84px;
-  right: 60px;
-  bottom: 60px;
+  width: 50px;
+  right: 20px;
+  bottom: 20px;
   z-index: 50;
   cursor: pointer;
 }
@@ -1021,9 +1021,9 @@ h4 {
   }
   /* WSP */
   .wsp-icon{
-    width: 60px;
-    right: 20px;
-    bottom: 20px;
+    width: 40px;
+    right: 15px;
+    bottom: 15px;
   }
   /* Differences */
   .p-title {
@@ -1342,5 +1342,11 @@ h4 {
   .about-us-text p {
     font-size: 16px;
     line-height: 16px;
+  }
+  /* WSP */
+  .wsp-icon{
+    width: 35px;
+    right: 10px;
+    bottom: 15px;
   }
 }
