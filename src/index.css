@@ -545,6 +545,7 @@ h4 {
   width: 400px;
   height: 108px;
   background-image: url(/public/images/trazado.png);
+  background-position: bottom right;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -987,7 +988,7 @@ h4 {
   /* ABOUT US */
   .about-us-container{
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 50px 80px;
   }
   .title-about-us{
     border-right: none;
@@ -999,7 +1000,7 @@ h4 {
   }
   /* MISSION */
   .px-115{
-    padding: 20px;
+    padding: 20px 80px;
   }
   /* FOOTER */
   .social-footer{
@@ -1183,10 +1184,18 @@ h4 {
     width: 100%;
     max-width: none;
   }
+  /* ABOUT US */
+  .about-us-text p {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 575.98px) {
   h1{
     font-size: 24px;
+  }
+  h3{
+    font-size: 26px;
   }
   h4{
     font-size: 22px;
@@ -1297,6 +1306,11 @@ h4 {
     height: 70px;
   }
   .text-description {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* ABOUT US */
+  .about-us-text p {
     font-size: 16px;
     line-height: 16px;
   }
