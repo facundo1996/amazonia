@@ -25,12 +25,12 @@ export default function Differences() {
 	]
 	return (
 		<div className='differences-container'>
-			<div className='box-differences pe-5 pt-5'>
+			<div className='box-differences pe-5 pt-3 pt-xl-5'>
 				<h1 className='mb-3 mt-3 p-title'>¡DESCUBRÍ LA DIFERENCIA!</h1>
 				<div>
 					{
 						items.map((item, index) => (
-							<div key={item.id} className={`d-flex mb-5 p-box-${item.id}`}>
+							<div key={item.id} className={`d-flex mb-2 mb-sm-5 p-box-${item.id}`}>
 								<div className='number'>{item.id}</div>
 								<div>
 									<div className='title-md'>{item.title}</div>
