@@ -9,7 +9,7 @@ export default function Mission() {
 				<h3 className='title-mission'>VISIÓN</h3>
 				<p className='text-blue'>Liderar el camino hacia un futuro de construcción moderna, donde la eficiencia, la calidad y la responsabilidad ambiental, en consonancia con la maximización del tiempo, sean los pilares fundamentales de cada proyecto. Buscamos ser reconocidos a nivel global como referentes en innovación y excelencia en la construcción moderna, contribuyendo activamente a la creación de entornos habitables para las generaciones presentes y futuras.</p>
 			</div>
-			<div className='col-12 col-lg-7'>
+			<div className='col-12 col-lg-7 ps-0 ps-lg-5'>
 				<h3 className='title-mission'>VALORES</h3>
 				<ul className='ul-list'>
 					<li><b>Sustentabilidad:</b> Nos comprometemos a integrar prácticas y tecnologías que respeten y protejan el medio ambiente, cuidando nuestro espacio para futuras generaciones. </li>

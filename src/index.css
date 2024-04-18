@@ -1123,8 +1123,12 @@ h4 {
     padding: 20px;
     height: auto;
   }
+  
 }
 @media (max-width: 767.98px) {
+  h3{
+    font-size: 30px;
+  }
   .construction-system-container{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1188,6 +1192,20 @@ h4 {
   .about-us-text p {
     font-size: 20px;
     line-height: 21px;
+  }
+  /* MISSION */
+  .title-mission {
+    padding: 0px;
+    width: 200px;
+    height: 56px;
+  }
+  .text-blue {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ul-list {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 @media (max-width: 575.98px) {
