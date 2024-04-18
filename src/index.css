@@ -1185,6 +1185,12 @@ h4 {
   }
 }
 @media (max-width: 575.98px) {
+  h1{
+    font-size: 24px;
+  }
+  h4{
+    font-size: 22px;
+  }
   /* BANNER */
   .banner-container {
     height: 500px;
@@ -1216,6 +1222,11 @@ h4 {
     background-position: bottom right;
     align-items: flex-start;
     padding-left: 80px;
+  }
+  /* Construction System */
+  .text-construction-system {
+    font-size: 16px;
+    line-height: 16px;
   }
   .title-construction-system{
     width: 88%;
@@ -1284,5 +1295,9 @@ h4 {
   /* Characteristics */
   .box-card {
     height: 70px;
+  }
+  .text-description {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
