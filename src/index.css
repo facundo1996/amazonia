@@ -741,13 +741,6 @@ h4 {
   color: #707070;
 }
 
-
-
-
-
-
-
-
 @media (min-width: 2350px) {
   /* DIFFERENCES */
   .differences-container {
@@ -865,7 +858,7 @@ h4 {
     margin: auto;
   }
   .row-container{
-    padding: 50px 80px;
+    padding: 20px 80px;
   }
   .text-description{
     padding-right: 0px;
@@ -927,6 +920,7 @@ h4 {
     top: 0px;
     left: 80px;
     padding: 20px;
+    width: calc(100vw - 80px);
   }
   #navbarNav .nav-link {
     border: none;
@@ -1355,6 +1349,9 @@ h4 {
   .text-description {
     font-size: 16px;
     line-height: 16px;
+  }
+  .box-cards-container {
+    grid-gap: 0px 0px;
   }
   /* ABOUT US */
   .about-us-text p {

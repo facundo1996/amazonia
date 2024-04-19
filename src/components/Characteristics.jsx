@@ -221,7 +221,7 @@ export default function Characteristics() {
                 }
               </div>
 
-              <div className='w-100 ps-0 ps-xxl-5 d-flex flex-column justify-content-between mt-5 mt-xxl-0'>
+              <div className='w-100 ps-0 ps-xxl-5 d-flex flex-column justify-content-between mt-3 mt-md-5 mt-xxl-0'>
                 <div>
                   <h3 className='d-none d-xxl-flex'>CARACTERÍSTICAS <br /> CLAVES</h3>
                   <hr className='d-none d-xxl-flex' />
