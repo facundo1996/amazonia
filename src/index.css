@@ -47,6 +47,7 @@ body {
 
 h1 {
   font-size: 80px;
+  line-height: 70px;
   font-weight: bold;
   font-family: var(--font-title);
   color: var(--primary);
@@ -212,13 +213,14 @@ h4 {
   width: 100%;
 }
 
-.title-system {
+.title-system{
   border-right: var(--primary) solid 3px;
   padding-right: 30px;
 }
 
 .text-construction-system {
   font-size: 22px;
+  line-height: 24px;
   padding-left: 72px;
   color: var(--primary);
   font-family: var(--font-text);
@@ -1138,9 +1140,11 @@ h4 {
   }
   h1{
     font-size: 35px;
+    line-height: 35px;
   }
   .text-construction-system {
     font-size: 20px;
+    line-height: 20px;
   }
   /* BANNER */
   .contenedor-frase {
@@ -1210,6 +1214,7 @@ h4 {
 @media (max-width: 575.98px) {
   h1{
     font-size: 24px;
+    line-height: 24px;
   }
   h3{
     font-size: 26px;
