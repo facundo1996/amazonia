@@ -11,6 +11,8 @@ import ChooseUs from "./components/ChooseUs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Rights from "./components/Rights";
+import Banner2 from "./components/Banner2";
+
 function App() {
   return (
     <div className="App">
@@ -19,8 +21,9 @@ function App() {
       <Characteristics />
       <Banner />
       <Commercialization />
-      <Models />
+      {/* <Models /> */}
       <AboutUs />
+      <Banner2 />
       <Mission />
       <Differences />
       <ChooseUs />
