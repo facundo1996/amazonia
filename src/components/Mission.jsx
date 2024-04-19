@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Mission() {
 	return (
-		<div className='row w-100 px-115 py-5'>
+		<div className='row w-100 px-115'>
 			<div className='col-12 col-lg-5'>
 				<h3 className='title-mission'>MISIÓN</h3>
 				<p className='text-blue mb-4'>Transformar la industria de la construcción ofreciendo una solución innovadora y sostenible que mejore la calidad de vida de las personas y contribuya a la preservación del medio ambiente. </p>

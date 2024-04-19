@@ -67,8 +67,7 @@ h4 {
 }
 
 .px-115 {
-  padding-left: 115px;
-  padding-right: 115px;
+  padding: 20px 115px;
 }
 
 .title-md {
@@ -1110,6 +1109,7 @@ h4 {
    }
    .choose-1 {
     width: 100%;
+    padding: 20px 80px;
   }
   .choose-2 {
     width: 100%;
@@ -1367,5 +1367,14 @@ h4 {
    /* BANNER 2*/
   .banner{
     height: 300px;
+  }
+  /* MISSION */
+  .text-blue {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .ul-list {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
