@@ -697,6 +697,9 @@ h4 {
 }
 .contact-info a{
   text-decoration: none;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  word-break: break-all;
   color: var(--primary)!important;
 }
 .contact-info img{
