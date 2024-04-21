@@ -48,73 +48,75 @@ export default function Models() {
   ]
 
   return (
-    <div id='models' className=''>
+    <>
+      <h1 className='title-models'>MODELOS</h1>
+      <div id='models' className=''>
 
-      {/* <h1>MODELOS</h1> */}
 
-      <div className='h-100'>
+        <div className='h-100'>
 
-        <div className='model-container model-container-t'>
+          <div className='model-container model-container-t'>
 
-          <Carousel id={'carouselTehobroma'} images={tehobroma.slice(0, 2)} />
-          <div className='view-more-container pt-4'>
-            <div>TEHOBROMA</div>
-            <p>Diseñada para adaptarse a tu estilo de vida y a tus planes futuros de expansión, con un total de 110 m2, esta casa ofrece una combinación ideal de funcionalidad y confort, con cada espacio cuidadosamente diseñado para maximizar su utilidad y brindarte el máximo bienestar.</p>
-            <button>VER MÁS</button>
-          </div>
+            <Carousel id={'carouselTehobroma'} images={tehobroma.slice(0, 2)} />
+            <div className='view-more-container pt-4'>
+              <div>TEHOBROMA</div>
+              <p>Diseñada para adaptarse a tu estilo de vida y a tus planes futuros de expansión, con un total de 110 m2, esta casa ofrece una combinación ideal de funcionalidad y confort, con cada espacio cuidadosamente diseñado para maximizar su utilidad y brindarte el máximo bienestar.</p>
+              <button>VER MÁS</button>
+            </div>
 
-          <div className="accordion-models accordion accordion-flush" id="accordionTehobroma">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-tehobroma">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-tehobroma" aria-expanded="false" aria-controls="flush-collapse-tehobroma">
-                  TEHOBROMA
-                </button>
-              </h2>
-              <div id="flush-collapse-tehobroma" className="accordion-collapse collapse" aria-labelledby="flush-tehobroma" data-bs-parent="#accordionTehobroma">
-                <div className="accordion-body">
-                  {
-                    models[0].descriptions.map((description, index) => (
-                      <p key={index}>{description}</p>
-                    ))
-                  }
+            <div className="accordion-models accordion accordion-flush" id="accordionTehobroma">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-tehobroma">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-tehobroma" aria-expanded="false" aria-controls="flush-collapse-tehobroma">
+                    TEHOBROMA
+                  </button>
+                </h2>
+                <div id="flush-collapse-tehobroma" className="accordion-collapse collapse" aria-labelledby="flush-tehobroma" data-bs-parent="#accordionTehobroma">
+                  <div className="accordion-body">
+                    {
+                      models[0].descriptions.map((description, index) => (
+                        <p key={index}>{description}</p>
+                      ))
+                    }
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
 
-        </div>
+          <div className='model-container model-container-d'>
+            <div className='view-more-container' >
+              <div>DINIZIA</div>
+              <p>Casa especialmente diseñada para terrenos en esquina, donde la fachada principal y la conexión con la cochera son los elementos destacados. Con un diseño de doble altura, esta vivienda brinda una sensación de amplitud y confort desde el momento en que se atraviesa la puerta principal.</p>
+              <button>VER MÁS</button>
+            </div>
 
-        <div className='model-container model-container-d'>
-          <div className='view-more-container' >
-            <div>DINIZIA</div>
-            <p>Casa especialmente diseñada para terrenos en esquina, donde la fachada principal y la conexión con la cochera son los elementos destacados. Con un diseño de doble altura, esta vivienda brinda una sensación de amplitud y confort desde el momento en que se atraviesa la puerta principal.</p>
-            <button>VER MÁS</button>
-          </div>
-
-          <div className="accordion-models accordion accordion-flush" id="accordionDinizia">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-dinizia">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-dinizia" aria-expanded="false" aria-controls="flush-collapse-dinizia">
-                  DINIZIA
-                </button>
-              </h2>
-              <div id="flush-collapse-dinizia" className="accordion-collapse collapse" aria-labelledby="flush-dinizia" data-bs-parent="#accordionDinizia">
-                <div className="accordion-body">
-                  {
-                    models[1].descriptions.map((description, index) => (
-                      <p key={index}>{description}</p>
-                    ))
-                  }
+            <div className="accordion-models accordion accordion-flush" id="accordionDinizia">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-dinizia">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-dinizia" aria-expanded="false" aria-controls="flush-collapse-dinizia">
+                    DINIZIA
+                  </button>
+                </h2>
+                <div id="flush-collapse-dinizia" className="accordion-collapse collapse" aria-labelledby="flush-dinizia" data-bs-parent="#accordionDinizia">
+                  <div className="accordion-body">
+                    {
+                      models[1].descriptions.map((description, index) => (
+                        <p key={index}>{description}</p>
+                      ))
+                    }
+                  </div>
                 </div>
               </div>
             </div>
+
+            <Carousel id={'carouselDinizia'} images={dinizia.slice(0, 2)} />
           </div>
 
-          <Carousel id={'carouselDinizia'} images={dinizia.slice(0, 2)} />
         </div>
 
       </div>
-
-    </div>
+    </>
   )
 }
