@@ -21,7 +21,7 @@ function App() {
       <Characteristics />
       <Banner />
       <Commercialization />
-      {/* <Models /> */}
+      <Models />
       <AboutUs />
       <Banner2 />
       <Mission />

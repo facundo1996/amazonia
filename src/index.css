@@ -340,8 +340,8 @@ h4 {
 
 .title-commercialization {
   text-align: center;
-  max-width: 1111px;
-  margin: 65px 115px;
+  padding: 65px 115px;
+  margin: auto;
   font-weight: 400;
 }
 
@@ -476,40 +476,100 @@ h4 {
 }
 
 /* MODELS */
-.model-container {
+#models{
+  width: 100%;
+  height: 1330px;
+  padding: 30px 100px;
+  max-width: 1920px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.model-container{
   display: flex;
-  margin-bottom: 50px;
-  padding: 0px 70px;
+  height: 50%;
+}
+.model-container-t{
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.model-container-d{
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#carouselTehobroma{
+  min-width: 1136px;
+  height: 800px;
+  align-self: flex-start;
+  margin-right: 25px;
+}
+#carouselDinizia{
+  margin-left: 25px;
+  min-width: 1136px;
+  height: 800px;
+  align-self: flex-end;
+}
+.view-more-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.view-more-container div{
+  font-size: 34px;
+  line-height: 30px;
+  font-family: var(--font-text);
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.view-more-container p{
+  font-size: 22px;
+  line-height: 26px;
+  font-family: var(--font-text);
+  color: var(--primary);
+}
+.view-more-container button{
+  width: 259px;
+  height: 63px;
+  background-color: var(--primary);
+  font-family: var(--font-text);
+  color: var(--white);
+  font-size: 22px;
+  border-radius: 20px;
+  border: none;
 }
 
-.title-models {
-  padding-left: 115px;
+.accordion-models {
+  display: none;
+  width: 100%;
 }
-
-.model-container video {
-  width: 750px;
-}
-
-.title-model {
+.accordion-models .accordion-button{ 
+  padding-left: 0px;
+  padding-right: 0px;
+  background: none;
+  border-bottom: none;
+  width: 100%;
   color: var(--primary);
   font-family: var(--font-text);
+  font-weight: 900;
   font-size: 34px;
-  font-weight: 800;
+  box-shadow: none;
 }
-
-.model-description {
+.accordion-models .accordion-button::after{
+  margin-left: 10px;
+  
+}
+.accordion-models .accordion-collapse{
+  
+}
+.accordion-models .accordion-body{
+  padding: 0px;
   color: var(--primary);
   font-family: var(--font-text);
   font-size: 22px;
-  line-height: 26px;
-  font-weight: 500;
+  line-height: 22px;
+  
 }
-.model-container .accordion-header{
-  display: none;
-}
-.model-container .accordion-body{
-  padding: 0;
-}
+
 /* ABOUT US */
 .about-us-container {
   background-color: #A5CCD6;
@@ -764,7 +824,18 @@ h4 {
     width: auto;
     height: 350px;
   }
-
+  /* MODELS */
+  #carouselTehobroma{
+    min-width: 850px;
+    height: 600px;
+  }
+  #carouselDinizia{
+    min-width: 850px;
+    height: 600px;
+  }
+  #models {
+    height: 1065px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -781,8 +852,16 @@ h4 {
     padding-left: 10%;
   }
   /* MODELS */
-  .model-container video {
-    width: 500px;
+  #carouselTehobroma{
+    min-width: 700px;
+    height: 500px;
+  }
+  #carouselDinizia{
+    min-width: 700px;
+    height: 500px;
+  }
+  #models {
+    height: 950px;
   }
   /* Choose us */
   .choose-1 {
@@ -867,6 +946,10 @@ h4 {
   .box-differences{
     padding-bottom: 20px;
   }
+  /* MODELS */
+  #models {
+    height: 1000px;
+  }
 }
 @media (max-width: 1299.98px) {
   /* NAVBAR */
@@ -883,6 +966,18 @@ h4 {
   /* CONTACT */
   .contact-container{
     padding: 30px 80px;
+  }
+  /* MODELS */
+  #carouselTehobroma{
+    min-width: 600px;
+    height: 450px;
+  }
+  #carouselDinizia{
+    min-width: 600px;
+    height: 450px;
+  }
+  #models {
+    height: 900px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -956,38 +1051,17 @@ h4 {
     background-image: none;
   }
   /* MODELS */
-  .model-container{
-    flex-direction: column;
-    padding: 0px 20px;
+  #models {
+    padding: 30px 80px;
+    height: 800px;
   }
-  .model-container video {
-    margin: auto;
+  #carouselTehobroma{
+    min-width: 400px;
+    height: 300px;
   }
-  .title-models{
-    padding-left: 20px;
-  }
-  .title-model{
-    display: none;
-  }
-  .model-container .accordion-header{
-    display: flex;
-  }
-  .accordion-button:not(.collapsed){
-    background-color: transparent;
-    border: none;
-  }
-  .model-container .accordion-button {
-    font-size: 24px;
-    font-family: var(--font-text);
-    font-weight: bold;
-    color: var(--primary);
-    box-shadow: none;
-  }
-  .model-container .accordion-button::after {
-    margin-left: 50px;
-  }
-  .model-container .accordion-body {
-    border-bottom: 2px solid var(--primary);
+  #carouselDinizia{
+    min-width: 400px;
+    height: 300px;
   }
   /* ABOUT US */
   .about-us-container{
@@ -1139,7 +1213,39 @@ h4 {
     padding: 20px;
     height: auto;
   }
-  
+  /* MODELS */
+  .model-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .model-container-d{
+    flex-direction: column-reverse;
+  }
+  #models {
+    padding: 30px 80px;
+    height: auto;
+  }
+  #carouselTehobroma{
+    min-width: auto;
+    height: auto;
+    align-items: center;
+    margin: 0;
+  }
+  #carouselDinizia{
+    min-width: auto;
+    height: auto;
+    align-items: center;
+    margin: 0;
+  }
+  .view-more-container{
+    display: none;
+  }
+  .accordion-models{
+    display: flex;
+  }
 }
 @media (max-width: 767.98px) {
   h3{
@@ -1220,6 +1326,15 @@ h4 {
   .ul-list {
     font-size: 20px;
     line-height: 22px;
+  }
+  /* MODELS */
+  .accordion-models .accordion-button{ 
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .accordion-models .accordion-body {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 @media (max-width: 575.98px) {
@@ -1311,10 +1426,7 @@ h4 {
     border: none;
   }
   /* MODELS */
-  .model-container video{
-    width: 100%;
-    margin: none;
-  } 
+  
   /* Differences */
   .box-differences{
     padding: 20px 80px!important;
