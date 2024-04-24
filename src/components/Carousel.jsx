@@ -28,7 +28,7 @@ export default function Carousel(props) {
         {
           images.map((image, index) => (
             <div key={index} className={index === 0 ? 'carousel-item active' : 'carousel-item'}>
-              <img src={image} className="d-block w-100" alt="" />
+              <img src={image} className="d-block w-100" alt="Sistema constructivo" />
             </div>
           ))
         }

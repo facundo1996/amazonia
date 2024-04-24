@@ -214,7 +214,7 @@ export default function Characteristics() {
                   characteristics.map((item, index) => (
 
                     <div key={index} className="box-card">
-                      <img onClick={() => setItemSelected(item)} src={itemSelected.id === item.id ? item.btn2 : item.btn1} alt="" />
+                      <img onClick={() => setItemSelected(item)} src={itemSelected.id === item.id ? item.btn2 : item.btn1} alt="Sistema constructivo" />
                     </div>
 
                   ))
@@ -235,7 +235,7 @@ export default function Characteristics() {
                   }
                 </div>
                 <div className='image-container'>
-                  <img className='c-image' src={itemSelected.icon2} alt="" />
+                  <img className='c-image' src={itemSelected.icon2} alt="Sistema constructivo" />
                 </div>
               </div>
             </div>

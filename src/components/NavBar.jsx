@@ -66,7 +66,7 @@ function NavBar() {
     <nav className={scrolled ? 'navbar navbar-expand-xl bg-white' : 'navbar navbar-expand-xl bg-transparent'} >
       <div className="container-fluid">
         <a className="navbar-brand" href='/' onClick={(e) => scrollToComponent(e, 'homepage')}>
-          <img className={scrolled ? 'amz-logo-navbar' : 'amz-logo-navbar-disabled'} src="/icons/amz-logo-blue.png" alt="" />
+          <img className={scrolled ? 'amz-logo-navbar' : 'amz-logo-navbar-disabled'} src="/icons/amz-logo-blue.png" alt="Eficiencia energética" />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon">
@@ -100,8 +100,8 @@ function NavBar() {
                 <a key={index} className='d-flex justify-content-center align-items-center' target='_blanc' href={social.url}>
                   {
                     scrolled
-                      ? <img className={'icon-social-blue'} src={social.iconblue} alt="" />
-                      : <img className={'icon-social-white'} src={social.icon} alt="" />
+                      ? <img className={'icon-social-blue'} src={social.iconblue} alt="Construcción rápida" />
+                      : <img className={'icon-social-white'} src={social.icon} alt="Construcción antisísmica" />
                   }
                 </a>
               ))
@@ -114,8 +114,8 @@ function NavBar() {
               <a key={index} className='d-flex justify-content-center align-items-center' target='_blanc' href={social.url}>
                 {
                   scrolled
-                    ? <img className={'icon-social-blue'} src={social.iconblue} alt="" />
-                    : <img className={'icon-social-white'} src={social.icon} alt="" />
+                    ? <img className={'icon-social-blue'} src={social.iconblue} alt="Muros 100% hormigon celular" />
+                    : <img className={'icon-social-white'} src={social.icon} alt="Eliminación de residuos de obra" />
                 }
               </a>
             ))
@@ -123,7 +123,7 @@ function NavBar() {
         </div>
       </div>
     </nav>
-      <img onClick={() => window.open('https://wa.me/3415217974', '_blank')} src={scrolledTop ?wspIcon.iconBlue :wspIcon.iconWhite} className='wsp-icon' alt="" />
+      <img onClick={() => window.open('https://wa.me/3415217974', '_blank')} src={scrolledTop ?wspIcon.iconBlue :wspIcon.iconWhite} className='wsp-icon' alt="Flexibilidad en el diseño" />
     </>
   )
 }

@@ -20,25 +20,25 @@ export default function Contact() {
         <h1>CONTACTO</h1>
 
         <div className='contact-info'>
-          <img width={'30px'} src="/icons/contact-location.png" alt="" />
+          <img width={'30px'} src="/icons/contact-location.png" alt="Amazonía Construcción Industrializada" />
           <a target='_blanc' href="https://www.google.com/maps/dir//Av.+San+Lorenzo+2669,+Cap.+Berm%C3%BAdez,+Santa+Fe/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x95b650f7aee0b7f9:0x701fb4db64baa2df?sa=X&ved=1t:707&ictx=111">
             Avenida San Lorenzo 2669, S2154 Capitán Bermúdez, Santa Fe, Argentina
           </a>
         </div>
         <div className='contact-info'>
-          <img width={'30px'} src="/icons/contact-tel.png" alt="" />
+          <img width={'30px'} src="/icons/contact-tel.png" alt="Amazonía Construcción Industrializada" />
           <a target='_blanc' href="https://wa.me/3415217974">
             +54 9 3415 21-7974
           </a>
         </div>
         <div className='contact-info'>
-          <img width={'30px'} src="/icons/contact-email.png" alt="" />
+          <img width={'30px'} src="/icons/contact-email.png" alt="Amazonía Construcción Industrializada" />
           <a href="mailto:comercial@amzdesarrollos.com">
             comercial@amzdesarrollos.com
           </a>
         </div>
         <div className='contact-info'>
-          <img width={'30px'} src="/icons/contact-web.png" alt="" />
+          <img width={'30px'} src="/icons/contact-web.png" alt="Amazonía Construcción Industrializada" />
           <a target='_blanc' href="http://www.amz-d.com/">
             www.amz-d.coms
           </a>

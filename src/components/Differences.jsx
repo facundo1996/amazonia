@@ -24,7 +24,7 @@ export default function Differences() {
 		},
 	]
 	return (
-		<div className='differences-container'>
+		<div className='differences-container' aria-label='Flexibilidad en el diseño'>
 			<div className='box-differences pe-5 pt-3 pt-xl-5'>
 				<h1 className='mb-3 mt-3 p-title'>¡DESCUBRÍ LA DIFERENCIA!</h1>
 				<div>
