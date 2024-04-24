@@ -6,17 +6,17 @@ function NavBar() {
     {
       icon: '/icons/f-white.png',
       iconblue: '/icons/f-blue.png',
-      url: 'https://www.google.com/'
+      url: 'https://www.facebook.com/'
     },
     {
       icon: '/icons/ig-white.png',
       iconblue: '/icons/ig-blue.png',
-      url: 'https://www.google.com/'
+      url: 'https://www.instagram.com/amazonia_amz/'
     },
     {
       icon: '/icons/in-white.png',
       iconblue: '/icons/in-blue.png',
-      url: 'https://www.google.com/'
+      url: 'https://www.linkedin.com/company/amazon%C3%ADa/'
     },
   ]
   const wspIcon = {
