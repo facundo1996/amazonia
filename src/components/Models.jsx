@@ -5,7 +5,7 @@ import ModalModels from './ModalModels'
 export default function Models() {
 
   const tehobroma = {
-    title: 'THEOBROMA ',
+    title: 'Casa Bromelia ',
     descriptions: [
       'Diseñada para adaptarse a tu estilo de vida y a tus planes futuros de expansión, con un total de 110 m2, esta casa ofrece una combinación ideal de funcionalidad y confort, con cada espacio cuidadosamente diseñado para maximizar su utilidad y brindarte el máximo bienestar.',
       'Con una integración perfecta entre la cocina, el comedor y la sala de estar, este espacio abierto te brinda la libertad de movimiento mientras disfrutas de todo el confort. Además, cuenta con generosos espacios de almacenamiento en toda la casa.',
@@ -24,7 +24,7 @@ export default function Models() {
     ]
   }
   const dinizia = {
-    title: 'DINIZIA',
+    title: 'Casa Dinizia',
     descriptions: [
       'Casa especialmente diseñada para terrenos en esquina, donde la fachada principal y la conexión con la cochera son los elementos destacados. Con un diseño de doble altura, esta vivienda brinda una sensación de amplitud y confort desde el momento en que se atraviesa la puerta principal.',
       'Al ingresar, te dará la bienvenida un espacio integrado de sala y comedor, que ofrece la combinación perfecta de privacidad y comodidad. ',
@@ -56,7 +56,7 @@ export default function Models() {
 
             <Carousel id={'carouselTehobroma'} images={tehobroma.images.slice(0, 2)} buttons={false} />
             <div className='view-more-container pt-4'>
-              <div>TEHOBROMA</div>
+              <div>Casa Bromelia</div>
               <p>Diseñada para adaptarse a tu estilo de vida y a tus planes futuros de expansión, con un total de 110 m2, esta casa ofrece una combinación ideal de funcionalidad y confort, con cada espacio cuidadosamente diseñado para maximizar su utilidad y brindarte el máximo bienestar.</p>
               <button type="button" data-bs-toggle="modal" data-bs-target="#modal-models" onClick={() => setModelSelect(tehobroma)}>VER MÁS</button>
             </div>
@@ -65,7 +65,7 @@ export default function Models() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-tehobroma">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-tehobroma" aria-expanded="false" aria-controls="flush-collapse-tehobroma">
-                    TEHOBROMA
+                  Casa Bromelia
                   </button>
                 </h2>
                 <div id="flush-collapse-tehobroma" className="accordion-collapse collapse" aria-labelledby="flush-tehobroma" data-bs-parent="#accordionTehobroma">
@@ -84,7 +84,7 @@ export default function Models() {
 
           <div className='model-container model-container-d'>
             <div className='view-more-container' >
-              <div>DINIZIA</div>
+              <div>Casa Dinizia</div>
               <p>Casa especialmente diseñada para terrenos en esquina, donde la fachada principal y la conexión con la cochera son los elementos destacados. Con un diseño de doble altura, esta vivienda brinda una sensación de amplitud y confort desde el momento en que se atraviesa la puerta principal.</p>
               <button type="button" data-bs-toggle="modal" data-bs-target="#modal-models" onClick={() => setModelSelect(dinizia)}>VER MÁS</button>
             </div>
@@ -93,7 +93,7 @@ export default function Models() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-dinizia">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-dinizia" aria-expanded="false" aria-controls="flush-collapse-dinizia">
-                    DINIZIA
+                  Casa Dinizia
                   </button>
                 </h2>
                 <div id="flush-collapse-dinizia" className="accordion-collapse collapse" aria-labelledby="flush-dinizia" data-bs-parent="#accordionDinizia">
