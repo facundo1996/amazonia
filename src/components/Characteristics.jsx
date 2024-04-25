@@ -183,7 +183,7 @@ export default function Characteristics() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1400);
+      setIsMobile(window.innerWidth < 1200);
     };
     handleResize()
 
@@ -221,10 +221,10 @@ export default function Characteristics() {
                 }
               </div>
 
-              <div className='w-100 ps-0 ps-xxl-5 d-flex flex-column justify-content-between mt-3 mt-md-5 mt-xxl-0'>
+              <div className='w-100 ps-0 ps-xl-5 d-flex flex-column justify-content-between mt-3 mt-md-5 mt-xl-0'>
                 <div>
-                  <h3 className='d-none d-xxl-flex'>CARACTERÍSTICAS <br /> CLAVES</h3>
-                  <hr className='d-none d-xxl-flex' />
+                  <h3 className='d-none d-xl-flex'>CARACTERÍSTICAS <br /> CLAVES</h3>
+                  <hr className='d-none d-xl-flex' />
                   <h4>{itemSelected.title}</h4>
                   {
                     itemSelected.descriptions.map((description, index) => (
