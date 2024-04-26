@@ -1054,6 +1054,41 @@ h4 {
   #models {
     height: 950px;
   }
+
+  .view-more-container div{
+    font-size: 26px;
+    line-height: 27px;
+  }
+  .view-more-container p{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .info-modal .title{
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .info-modal p{
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .btn-carousel{
+    width: 35px!important;
+    height: 35px!important;
+  }
+  .carousel-indicators {
+    left: auto;
+    right: 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .carousel-control-prev{
+    left: -35px;
+    top: 15px;
+  }
+  .carousel-control-next{
+    right: -35px;
+    top: 15px;
+  }
   /* Choose us */
   .choose-1 {
     width: 50%;
