@@ -1135,7 +1135,23 @@ h4 {
   .c-image {
     height: 200px;
   }
-
+  /* MISSION */
+  .title-mission {
+    width: 300px;
+    height: 85px;
+    padding-bottom: 6px;
+  }
+  .ul-list {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .ul-list li {
+    margin-bottom: 5px;
+  }
+  .text-blue {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 @media (max-width: 1399.98px) {
   .characteristics-container .accordion-button{
@@ -1568,7 +1584,7 @@ h4 {
   }
   /* MISSION */
   .title-mission {
-    padding: 0px;
+    padding: 0px 0px 5px 0px;
     width: 200px;
     height: 56px;
   }
@@ -1727,11 +1743,12 @@ h4 {
   }
   /* MISSION */
   .text-blue {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .ul-list {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 0px;
   }
 }
