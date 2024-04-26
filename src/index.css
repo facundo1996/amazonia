@@ -818,6 +818,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 115px;
 }
 .choose-2 div {
   text-align: center;
@@ -1059,7 +1060,7 @@ h4 {
   }
   .text-md {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 18px;
   }
   .number {
     font-size: 70px;
@@ -1114,10 +1115,13 @@ h4 {
     top: 15px;
   }
   /* Choose us */
+  .choose-us-container {
+    min-height: 350px;
+  }
   .choose-1 {
     width: 50%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
   .choose-2 {
     width: 50%;
@@ -1150,8 +1154,9 @@ h4 {
   }
   /* MISSION */
   .title-mission {
-    width: 300px;
-    height: 85px;
+    width: 215px;
+    height: 60px;
+    background-size: cover;
     padding-bottom: 6px;
   }
   .ul-list {
@@ -1477,7 +1482,7 @@ h4 {
    }
    .choose-1 {
     width: 100%;
-    padding: 20px 80px;
+    padding: 40px 80px;
   }
   .choose-2 {
     width: 100%;
@@ -1570,10 +1575,6 @@ h4 {
     line-height: 28px;
     margin-bottom: 10px;
   }
-  .number {
-    font-size: 100px;
-    line-height: 85px;
-  }
   .title-commercialization{
     font-size: 30px;
     line-height: 32px;
@@ -1589,10 +1590,7 @@ h4 {
     max-width: none;
   }
   /* ABOUT US */
-  .about-us-text p {
-    font-size: 20px;
-    line-height: 21px;
-  }
+  
   /* MISSION */
   .title-mission {
     padding: 0px 0px 5px 0px;
