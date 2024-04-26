@@ -340,11 +340,9 @@ h4 {
 }
 
 /* Commercialization */
-.commercialization-container {}
-
 .title-commercialization {
   text-align: center;
-  padding: 65px 115px;
+  padding: 60px 385px;
   margin: auto;
   font-weight: 400;
 }
@@ -1000,7 +998,10 @@ h4 {
   .social-container a {
     height: 20px;
   }
-  /* commercialization */
+  /* Commercialization */
+  .title-commercialization {
+    padding: 30px 400px;
+  }
   .box-commercialization-info {
     padding: 30px 20px 30px 175px;
   }
@@ -1158,8 +1159,8 @@ h4 {
   }
   /* Commercialization */
   .title-commercialization {
-    padding: 0px;
-    margin: 65px 80px;
+    padding: 65px 80px;
+    background-color: #E2E2E2;
   }
   /* NAVBAR */
   .bg-transparent{
@@ -1327,7 +1328,7 @@ h4 {
   /* Commercialization */
   .title-commercialization {
     text-align: center;
-    margin: 65px 80px;
+    padding: 65px 80px;
   }
   /* Differences */
   .differences-container {
@@ -1475,7 +1476,7 @@ h4 {
   .title-commercialization{
     font-size: 30px;
     line-height: 32px;
-    margin: 30px 80px;
+    padding: 30px 80px;
   }
   /* Choose us */
    .choose-1 h3{
@@ -1542,9 +1543,9 @@ h4 {
     overflow: hidden;
   }
   .title-commercialization {
-    font-size: 22px;
-    line-height: 22px;
-    margin: 25px 80px;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 25px 80px;
   }
   .box-1 {
     min-width: auto;
