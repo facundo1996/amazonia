@@ -775,6 +775,7 @@ h4 {
   position: relative;
   height: 100%;
   padding-left: 25%;
+  padding-top: 30px;
 }
 
 .p-title {
@@ -1046,12 +1047,24 @@ h4 {
   }
 
   /* DIFFERENCES */
-  .differences-container {
-    background-size: 90% 100%, 828px 100%;
-  }
-  
   .box-differences {
-    padding-left: 10%;
+    padding-top: 20px;
+  }
+   .differences-container {
+    height: 600px;
+  }
+  .title-md {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .text-md {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .number {
+    font-size: 70px;
+    line-height: 60px;
+    margin-right: 20px;
   }
   /* MODELS */
   #carouselTehobroma{
@@ -1374,9 +1387,7 @@ h4 {
     bottom: 15px;
   }
   /* Differences */
-  .p-title {
-    font-size: 65px;
-  }
+  
   /* CHOOSE US */
   .choose-1{
     padding-left: 80px;
@@ -1424,13 +1435,13 @@ h4 {
   .differences-container {
     width: 100%;
     background-image: url(/public/images/descubri-mobile.png);
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 300px;
   }
   .box-differences{
-    padding: 20px 20px 20px 20px!important;
+    padding: 35px 80px 20px 80px!important;
     background-image: url(/public/images/fondo-descubri-mobile.png);
     background-repeat: no-repeat
   }
@@ -1694,8 +1705,6 @@ h4 {
   }
   .p-title{
     width: auto;
-    font-size: 24px;
-    line-height: 24px;
   }
   .title-md {
     font-size: 20px;
@@ -1716,9 +1725,6 @@ h4 {
     font-size: 15px;
   }
   /* Characteristics */
-  .box-card {
-    
-  }
   .text-description {
     font-size: 16px;
     line-height: 16px;
