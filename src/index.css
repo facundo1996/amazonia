@@ -990,6 +990,11 @@ h4 {
     width: 300px;
     line-height: 40px; 
   }
+  /* BANNER 2*/
+  .banner{
+    width: 100%;
+    height: 500px;
+  }
   /* NAVBAR */
   .navbar {
     padding: 10px 50px;
@@ -1361,11 +1366,11 @@ h4 {
     padding-left: 80px;
     padding-right: 80px;
   }
-   /* BANNER 2*/
-   .title-banner{
-      right: 80px;
-    }
- .banner{
+  /* BANNER 2*/
+  .title-banner{
+    right: 80px;
+  }
+  .banner{
     height: 400px;
   }
   /* Construction System */
