@@ -972,7 +972,20 @@ h4 {
   h4 {
     font-size: 20px;
     font-weight: bold;
-}
+  }
+  .banner-container {
+    height: 80vh;
+  }
+  .contenedor-frase {
+    width: 750px;
+  }
+  .title-banner {
+    right: 115px;
+    top: 140px;
+    font-size: 40px;
+    width: 300px;
+    line-height: 40px; 
+  }
   /* NAVBAR */
   .navbar {
     padding: 10px 50px;
@@ -1054,9 +1067,7 @@ h4 {
     padding-left: 80px;
     padding-right: 80px;
   }
-  .title-banner{
-    right: 80px;
-  }
+  
   /* NAVBAR */
   .social-container {
     gap: 15px;
@@ -1281,6 +1292,9 @@ h4 {
     padding-right: 80px;
   }
    /* BANNER 2*/
+   .title-banner{
+      right: 80px;
+    }
  .banner{
     height: 400px;
   }
@@ -1437,16 +1451,7 @@ h4 {
     margin-bottom: 20px;
   }
   /* BANNER */
-  .contenedor-frase {
-    width: 900px;
-  }
-  .title-banner {
-    right: 80px;
-    top: 18%;
-    font-size: 70px;
-    width: 445px;
-    line-height: 70px; 
-  }
+  
   /* Commercialization */
   .box-1 {
     width: 375px;
