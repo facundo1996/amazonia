@@ -1005,6 +1005,34 @@ h4 {
   .box-commercialization-info {
     padding: 30px 20px 30px 175px;
   }
+  .title-construction-system {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .availability-info {
+    font-size: 18px;
+    line-height: 34px
+  }
+  .availability-time {
+    font-size: 28px;
+    line-height: 33px
+  }
+  .title-list {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .list-modality li::marker {
+    font-size: 18px;
+  }
+  .list-modality li {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .box-availability {
+    width: 250px;
+    height: 85px;
+  }
 
   /* DIFFERENCES */
   .differences-container {
