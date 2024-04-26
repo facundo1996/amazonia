@@ -45,7 +45,7 @@ export default function HomePage() {
           <a href='/' onClick={(e) => scrollToComponent(e, 'models')}>MODELOS </a>
           <a href='/' onClick={(e) => scrollToComponent(e, 'company')}>EMPRESA </a>
           <a href='/' onClick={(e) => scrollToComponent(e, 'contact')}>CONTACTO</a>
-          <div className='social-container mt-5'>
+          <div className='social-container mt-2'>
             {
               redes.map((social, index) => (
                 <a key={index} className='d-flex justify-content-center align-items-center' target='_blanc' href={social.url}>
