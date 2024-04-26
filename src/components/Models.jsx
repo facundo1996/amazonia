@@ -47,7 +47,7 @@ export default function Models() {
 
   return (
     <>
-      <h1 className='title-models'>MODELOS</h1>
+      <h1 id='models-title' className='title-models'>MODELOS</h1>
       <div id='models' className=''>
         <ModalModels data={modelSelect} />
         <div className='h-100'>

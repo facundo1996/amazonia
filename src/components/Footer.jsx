@@ -24,7 +24,7 @@ export default function Footer() {
         <a href='/' onClick={(e) => scrollToComponent(e, 'homepage')}>HOME </a>
         <a href='/' onClick={(e) => scrollToComponent(e, 'system')}>SISTEMA CONSTRUCTIVO AMZ </a>
         <a href='/' onClick={(e) => scrollToComponent(e, 'commercialization')}>COMERCIALIZACIÓN </a>
-        <a href='/' onClick={(e) => scrollToComponent(e, 'models')}>MODELOS </a>
+        <a href='/' onClick={(e) => scrollToComponent(e, 'models-title')}>MODELOS </a>
         <a href='/' onClick={(e) => scrollToComponent(e, 'company')}>EMPRESA </a>
         <a href='/' onClick={(e) => scrollToComponent(e, 'contact')}>CONTACTO</a>
       </div>

@@ -33,8 +33,9 @@ function NavBar() {
     const element = document.getElementById(id);
     if (element) {
       const yCoordinate = element.getBoundingClientRect().top + window.scrollY;
+      const widthPage = window.innerWidth;
       window.scrollTo({
-        top: yCoordinate + -130,
+        top: widthPage > 1600 ?yCoordinate + -130 :yCoordinate + -65,
         behavior: 'smooth'
       });
     }
@@ -42,7 +43,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > (window.innerHeight/2)) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -85,7 +86,7 @@ function NavBar() {
               <a onClick={(e) => scrollToComponent(e, 'commercialization')} className="nav-link b-r-2" href='/'>COMERCIALIZACIÓN</a>
             </li>
             <li className="nav-item">
-              <a onClick={(e) => scrollToComponent(e, 'models')} className="nav-link b-r-2" href='/'>MODELOS</a>
+              <a onClick={(e) => scrollToComponent(e, 'models-title')} className="nav-link b-r-2" href='/'>MODELOS</a>
             </li>
             <li className="nav-item">
               <a onClick={(e) => scrollToComponent(e, 'company')} className="nav-link b-r-2" href='/'>EMPRESA</a>
