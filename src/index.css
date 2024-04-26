@@ -839,7 +839,7 @@ h4 {
   border-right: 3px solid var(--primary);
   display: flex;
   justify-content: center;
-  padding-right: 85px;
+  padding-right: 115px;
 }
 .form-contact{
   display: flex;
@@ -1170,6 +1170,17 @@ h4 {
     font-size: 16px;
     line-height: 22px;
   }
+  /* CONTACT */
+  .form-contact input, textarea {
+    padding: 10px;
+  }
+  .form-contact input:focus-visible, textarea:focus-visible {
+    outline: var(--primary) auto 2px;
+  }
+  .contact-info {
+    font-size: 16px;
+  }
+ 
 }
 @media (max-width: 1399.98px) {
   .characteristics-container .accordion-button{
