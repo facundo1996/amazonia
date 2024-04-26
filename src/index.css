@@ -971,6 +971,12 @@ h4 {
     font-size: 20px;
     font-weight: bold;
   }
+  /* ABOUT US */
+  .about-us-text p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* BANNER */
   .banner-container {
     height: 80vh;
   }
@@ -1701,8 +1707,8 @@ h4 {
   }
   /* ABOUT US */
   .about-us-text p {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 13px;
   }
   /* WSP */
   .wsp-icon{
