@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <div className='footer-container row'>
       <div className='d-flex flex-column justify-content-center align-items-center col-12 col-xl-6 b-r-2'>
-        <img className='logo-footer' src="/icons/logo-completo.png" alt="Construcción rápida" />
+        <img className='logo-footer' src="/img/icons/logo-completo.png" alt="Construcción rápida" />
         <div className='text-md c-light mt-4 mt-xl-5'>LÍDERES EN CONSTRUCCIÓN INDUSTRIALIZADA</div>
       </div>
       <div className='d-flex flex-column justify-content-center align-items-center align-items-xl-start col-12 col-xl-6 social-footer'>

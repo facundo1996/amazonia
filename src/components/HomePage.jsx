@@ -4,18 +4,18 @@ export default function HomePage() {
 
   const redes = [
     {
-      icon: '/icons/f-white.png',
-      iconblue: '/icons/f-blue.png',
+      icon: '/img/icons/f-white.png',
+      iconblue: '/img/icons/f-blue.png',
       url: 'https://www.google.com/'
     },
     {
-      icon: '/icons/ig-white.png',
-      iconblue: '/icons/ig-blue.png',
+      icon: '/img/icons/ig-white.png',
+      iconblue: '/img/icons/ig-blue.png',
       url: 'https://www.google.com/'
     },
     {
-      icon: '/icons/in-white.png',
-      iconblue: '/icons/in-blue.png',
+      icon: '/img/icons/in-white.png',
+      iconblue: '/img/icons/in-blue.png',
       url: 'https://www.google.com/'
     },
   ]

@@ -4,24 +4,24 @@ function NavBar() {
 
   const redes = [
     {
-      icon: '/icons/f-white.png',
-      iconblue: '/icons/f-blue.png',
+      icon: '/img/icons/f-white.png',
+      iconblue: '/img/icons/f-blue.png',
       url: 'https://www.facebook.com/'
     },
     {
-      icon: '/icons/ig-white.png',
-      iconblue: '/icons/ig-blue.png',
+      icon: '/img/icons/ig-white.png',
+      iconblue: '/img/icons/ig-blue.png',
       url: 'https://www.instagram.com/amazonia_amz/'
     },
     {
-      icon: '/icons/in-white.png',
-      iconblue: '/icons/in-blue.png',
+      icon: '/img/icons/in-white.png',
+      iconblue: '/img/icons/in-blue.png',
       url: 'https://www.linkedin.com/company/amazon%C3%ADa/'
     },
   ]
   const wspIcon = {
-    iconBlue: 'icons/wsp-azul.png',
-    iconWhite: 'icons/wsp-blanco.png',
+    iconBlue: '/img/icons/wsp-azul.png',
+    iconWhite: '/img/icons/wsp-blanco.png',
     tel: '',
   }
 
@@ -67,7 +67,7 @@ function NavBar() {
     <nav className={scrolled ? 'navbar navbar-expand-xl bg-white' : 'navbar navbar-expand-xl bg-transparent'} >
       <div className="container-fluid">
         <a className="navbar-brand" href='/' onClick={(e) => scrollToComponent(e, 'homepage')}>
-          <img className={scrolled ? 'amz-logo-navbar' : 'amz-logo-navbar-disabled'} src="/icons/amz-logo-blue.png" alt="Eficiencia energética" />
+          <img className={scrolled ? 'amz-logo-navbar' : 'amz-logo-navbar-disabled'} src="/img/icons/amz-logo-blue.png" alt="Eficiencia energética" />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon">
