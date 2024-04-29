@@ -26,7 +26,7 @@ export default function Differences() {
 	return (
 		<div className='differences-container' aria-label='Flexibilidad en el diseño'>
 			<div className='box-differences pe-5'>
-				<h1 className='mb-3 mt-3 p-title'>¡DESCUBRÍ LA DIFERENCIA!</h1>
+				<h1 className='mb-3 mt-3 p-title'>¡DESCUBRA LA DIFERENCIA!</h1>
 				<div>
 					{
 						items.map((item, index) => (

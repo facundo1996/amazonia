@@ -12,7 +12,7 @@ export default function AboutUs() {
 				<p>Sistema Constructivo Amazonia, una solución pionera que redefine los estándares de la construcción moderna, brindando al mercado una innovadora metodología que viene a revolucionar el proceso de construcción. </p>
 				<p>Con una amplia gama de aplicaciones en el sector inmobiliario, nuestro Sistema Constructivo AMZ se destaca por su eficiencia, sostenibilidad y versatilidad, ofreciendo soluciones flexibles y personalizadas que se adaptan a las necesidades y preferencias de cada cliente. </p>
 				<p>Únase a nosotros en la vanguardia de la construcción moderna y descubra cómo el Sistema Constructivo de Amazonia puede transformar su proyecto en una realidad.</p>
-				<p className='mb-0 mt-2 mt-xl-3 mt-xxl-5'><b>Descubre Amazonia, donde la innovación y la calidad se unen para definir el futuro de la construcción.</b></p>
+				<p className='mb-0 mt-2 mt-xl-3 mt-xxl-5'><b>Descubra Amazonia, donde la innovación y la calidad se unen para definir el futuro de la construcción.</b></p>
 			</div>
 		</div>
 	)
