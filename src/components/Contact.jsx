@@ -1,19 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [tel, setTel] = useState('')
+  const [message, setMessage] = useState('')
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [btnContact, setBtnContact] = useState(false);
+
+  function sendEmail(e) {
+    e.preventDefault()
 
 
+    if (name.length < 2) {
+      setError('El nombre debe tener al menos 2 caracteres.');
+      return;
+    }
+    if (!email.match(/^\S+@\S+\.\S+$/)) {
+      setError('El email ingresado no es válido.');
+      return;
+    }
+    /* if (tel.length < 5) {
+      setError('El teléfono debe tener al menos 5 dígitos.');
+      return;
+    } */
+    if (message.length < 6) {
+      setError('El mensaje debe tener al menos 6 caracteres.');
+      return;
+    }
+
+     emailjs.send("service_6p9wt76","template_rhbifrj",{
+      name,
+      message,
+      tel,
+      email,
+    }, 'SiJGtOZ854pzCsanH');
+    
+    setError('');
+    setSuccess('Mensaje enviado con éxito.');
+    setBtnContact(true)
+  }
 
   return (
     <div id='contact' className='row contact-container'>
       <div className='col-12 col-lg-6 form-container'>
         <form className='form-contact' action="">
-          <input placeholder='NOMBRE' type="text" />
-          <input placeholder='E-MAIL' type="email" />
-          <input placeholder='CELULAR' type="number" />
-          <textarea placeholder='MENSAJE'></textarea>
-          <button onClick={(e) => e.preventDefault()} className='btn-contact'>ENVIAR</button>
+          <input onChange={(e) => setName(e.target.value)} placeholder='NOMBRE' type="text" />
+          <input onChange={(e) => setEmail(e.target.value)} placeholder='E-MAIL' type="email" />
+          <input onChange={(e) => setTel(e.target.value)} placeholder='CELULAR' type="number" />
+          <textarea onChange={(e) => setMessage(e.target.value)} placeholder='MENSAJE'></textarea>
+          <p className='text-danger text-center f-text'>{error}</p>
+          <p className='text-success text-center f-text'>{success}</p>
+          <button disabled={btnContact} onClick={(e) => sendEmail(e)} className='btn-contact'>ENVIAR</button>
         </form>
       </div>
       <div className='col-12 col-lg-6 ps-0 ps-lg-5'>
