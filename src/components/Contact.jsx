@@ -23,10 +23,10 @@ export default function Contact() {
       setError('El email ingresado no es válido.');
       return;
     }
-    /* if (tel.length < 5) {
+    if (tel.length < 5) {
       setError('El teléfono debe tener al menos 5 dígitos.');
       return;
-    } */
+    }
     if (message.length < 6) {
       setError('El mensaje debe tener al menos 6 caracteres.');
       return;
@@ -74,14 +74,14 @@ export default function Contact() {
         </div>
         <div className='contact-info'>
           <img width={'30px'} src="/img/icons/contact-email.png" alt="Amazonía Construcción Industrializada" />
-          <a href="mailto:comercial@amzdesarrollos.com">
-            comercial@amzdesarrollos.com
+          <a href="mailto:comercial@amazoniaamz.com">
+            comercial@amazoniaamz.com
           </a>
         </div>
         <div className='contact-info'>
           <img width={'30px'} src="/img/icons/contact-web.png" alt="Amazonía Construcción Industrializada" />
-          <a target='_blanc' href="http://www.amz-d.com/">
-            www.amz-d.coms
+          <a target='_blanc' href="http://www.amazoniaamz.com/">
+            www.amazoniaamz.com/
           </a>
 
         </div>

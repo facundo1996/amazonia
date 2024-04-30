@@ -6,7 +6,7 @@ function NavBar() {
     {
       icon: '/img/icons/f-white.png',
       iconblue: '/img/icons/f-blue.png',
-      url: 'https://www.facebook.com/'
+      url: 'https://www.facebook.com/profile.php?id=61559159877792'
     },
     {
       icon: '/img/icons/ig-white.png',
