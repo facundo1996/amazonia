@@ -12,13 +12,15 @@ export default function ModalModels(props) {
           <div className="modal-body">
             <div className='container-modal'>
               <div className='container-carousel'>
-                <Carousel id={'carouselModal'} images={data.images} buttons={true} />
+                {
+                  data && data.imagenes && <Carousel id={'carouselModal'} images={data.imagenes} buttons={true} />
+                }
               </div>
               <div className='info-modal'>
-                <div className='title'>{data.title}</div>
+                <div className='title'>{data.titulo}</div>
                 <div>
                   {
-                    data.descriptions.map((description, index) => (
+                    data && data.textoLargo && data.textoLargo.map((description, index) => (
                       <p key={index}>{description}</p>
                     ))
                   }
